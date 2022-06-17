@@ -1,0 +1,18 @@
+.banner-container {
+    padding: 64px 0;
+    margin-bottom: 64px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+.banner-container.loyalty-banner {
+    padding: 44px 0 80px;
+    height: auto;
+    margin-bottom: 0;
+    background-image: url("../images/loyaltyhub/loyalty-banner.svg");
+    background-position: center bottom;
+    margin-bottom: -40px;
+}
+.banner-container.loyalty-banner .heading2-text {
+    color: #693c14;
+}

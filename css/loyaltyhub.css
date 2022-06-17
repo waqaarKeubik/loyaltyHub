@@ -1,0 +1,803 @@
+.offer-tasks {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Wallet Balance */
+.pointbox-wrapper {
+    width: 100%;
+}
+.offer-tasks > * {
+    width: 100%;
+}
+.offer-tasks .pointbox-wrapper {
+    display: flex;
+    width: 100%;
+}
+.pointbox {
+    width: 25%;
+}
+.pointbox .points-item {
+    width: 100%;
+    border: 1px solid #e8c653;
+    padding: 12px 20px 12px 16px;
+    border-radius: 8px;
+    background-color: #fcfbf6;
+    position: relative;
+}
+.pointbox .points-item:after {
+    content: "\f107";
+    font-family: FontAwesome;
+    font-size: 2.5rem;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-90deg);
+}
+.pointbox .points-item:not(:first-child) {
+    margin-top: 12px;
+}
+.pointbox .points span {
+    font-family: 'DINOT-Bold';
+}
+.pointbox .number {
+    display: flex;
+    align-items: center;
+    color: #693c14;
+    font-family: 'DINOT-Bold';
+}
+.pointbox-wrapper:not(.one-campaign) .tierbox .tier-badge {
+    display: flex;
+    align-items: center;
+}
+.pointbox-wrapper .tier-bar-inner .tier-points {
+    display: none;
+}
+
+/* Tier Level */
+.tierbox {
+    width: 72%;
+    margin-left: 3%;
+    border: 1px solid #e8c653;
+    padding: 20px 100px 20px 20px;
+    border-radius: 8px;
+    background-color: #fcfbf6;
+    position: relative;
+}
+.tierbox:after {
+    content: "\f107";
+    font-family: FontAwesome;
+    font-size: 2.5rem;
+    position: absolute;
+    right: 26px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-90deg);
+}
+.tierbox > .bg-icon {
+    position: absolute;
+    right: 8px;
+    top: 10px;
+}
+.tier-badge .badge-image {
+    width: 64px;
+    height: 64px;
+    border-radius: 5px;
+    margin-right: 16px;
+    overflow: hidden;
+}
+.tier-badge .tier-name {
+    color: #693c14;
+}
+.tier-badge .tier-points {
+    display: flex;
+    align-items: center;
+}
+.tier-bar {
+    margin-top: 20px;
+}
+.tier-outer {
+    background-color: #f2edd9;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #d0a71c;
+}
+.tier-outer .tier-inner {
+    border-radius: 5px;
+    height: 8px;
+    background-color: #d0a71c;
+}
+.tierbox .remaining-points {
+    margin-top: 15px;
+    color: #2b2b2b;
+}
+.tierbox .remaining-points span {
+    color: #693c14;
+    font-family: 'DINOT-Bold';
+}
+
+/* Shop & Win Box */
+.shopwin-container {
+    border-radius: 8px;
+    background-color: #fcfbf6;
+    border: 1px solid #e8c653;
+}
+.shopwin-container .shopwin-banner {
+    text-align: center;
+    margin-top: -46px;
+    position: relative;
+}
+.shopwin-container .shopwin-banner .swb1 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 340px;
+    margin: auto;
+    z-index: -1;
+}
+.shopwin-container .shopwin-banner .swb2 {
+    width: 158px;
+}
+.shopwin-container .shopwin-header {
+    padding: 20px;
+    display: flex;
+}
+.shopwin-container .shopwin-header .swh-title {
+    word-break: break-word;
+    font-size: 2rem;
+    line-height: 24px;
+}
+.shopwin-container .shopwin-header .swh-subtext {
+    margin-top: 12px;
+    color: #2b2b2b;
+    padding-right: 10px;
+    word-break: break-word;
+}
+.shopwin-container .shopwin-header > img {
+    width: 65px;
+}
+.shopwin-container .shopwin-bar {
+    padding: 0px 20px 20px;
+    display: flex;
+    align-items: center;
+}
+.shopwin-container .shopwin-bar .swbar-icon {
+    width: 48px;
+    min-width: 48px;
+}
+.shopwin-container .shopwin-bar .swbar-inner {
+    margin: 0 12px;
+    flex: 1;
+}
+.shopwin-container .shopwin-bar .ct-bar-text {
+    color: #693c14;
+    font-family: 'DINPro-Bold';
+    font-size: 1.4rem;
+    line-height: 18px;
+}
+.shopwin-container .shopwin-bar .ct-bar {
+    margin-top: 12px;
+}
+.shopwin-container .shopwin-bar .ct-outer {
+    background-color: #f2edd9;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1px solid #d0a71c;
+}
+.shopwin-container .shopwin-bar .ct-outer .ct-inner {
+    height: 6px;
+    border-radius: 5px;
+    background-color: #d0a71c;
+}
+.shopwin-container .shopwin-bar .swbar-count-number {
+    font-family: 'DINPro-Black';
+    font-size: 2rem;
+    line-height: 24px;
+}
+.shopwin-container .shopwin-bar .swbar-count-number span {
+    opacity: 0.4;
+    font-family: 'DINOT';
+    font-size: 1.2rem;
+    line-height: 14.9px;
+}
+.shopwin-container .shopwin-footer {
+    padding: 20px;
+    border-top: 1px solid #e8c653;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.shopwin-container .shopwin-footer > * {
+    width: 50%;
+}
+.shopwin-container .shopwin-footer .swf-normal-btn-container {
+    text-align: center;
+}
+.shopwin-container .shopwin-footer .swf-normal-btn {
+    font-family: 'DINOT-Bold';
+    color: #371f0b;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+}
+.shopwin-container .shopwin-footer .swf-color-btn {
+    font-family: 'DINOT-Bold';
+    padding: 10px 0px;
+    border-radius: 4px;
+    background: linear-gradient(315deg, #E8C653 10.21%, #ECD175 48.48%, #D0A71C 100.78%);
+    color: #1b1005;
+}
+
+/* Spin Wheel Box */
+.spinwheel-main {
+    border-radius: 8px;
+    background-color: #371f0b;
+    padding: 20px;
+    text-align: center;
+}
+.swm-detail {
+    margin-bottom: 16px;
+}
+.swm-detail .swmd2 {
+    color: #ecd175;
+}
+.swm-detail .swmd3 {
+    color: #fdfdfa;
+    opacity: .8;
+}
+.swm-detail .swmd3.spin-desc {
+    word-break: normal;
+    -webkit-line-clamp: initial;
+}
+.swm-detail .swmd2, .swm-detail .swmd3 {
+    word-break: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.swm-btn {
+    margin-top: auto;
+}
+
+/* Scratchcard Box */
+.scratchcard-main {
+    border-radius: 8px;
+    background-color: #f2edd9;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #e8c653;
+}
+.scm-detail {
+    margin-bottom: 16px;
+}
+.scm-detail .scmd1 {
+    color: #693c14;
+}
+.scm-detail .scmd2 {
+    opacity: 0.7;
+    font-family: 'DINOT-Bold';
+}
+.otb-btn {
+    width: 100%;
+    border-radius: 8px;
+    padding: 12px;
+    font-family: 'DINOT-Bold';
+    color: #1b1005;
+    margin-top: 16px;
+    background: linear-gradient(315deg, #E8C653 10.21%, #ECD175 48.48%, #D0A71C 100.78%);
+}
+.ot-box .otb-btn {
+    width: auto;
+}
+.otb-btn:hover, .otb-btn:focus, .otb-btn:active {
+    color: #1b1005;
+}
+.scm-btn {
+    margin-top: auto;
+}
+
+/* Upload Bill Box */
+.uploadbill-main {
+    display: flex;
+    align-items: center;
+}
+.ubm-detail {
+    display: flex;
+    flex-direction: column;
+}
+.ubm-detail .ubmd1 {
+    font-size: 2rem;
+    line-height: 24px;
+}
+.ubm-detail .ubmd2 {
+    color: #6a6a6a;
+    font-family: 'DINOT';
+    margin-top: 12px;
+}
+.ubm-btn {
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    padding: 12px 38px;
+    font-family: 'DINOT-Bold';
+    color: #fff;
+    margin-top: 24px;
+    background: linear-gradient(135deg, #1B1005 -15.39%, #D0A71C 143.79%);
+}
+.ubm-btn:hover, .ubm-btn:focus, .ubm-btn:active {
+    color: #fff;
+}
+
+/* Invite Friends */
+.loyalty-wrapper .invite-friends-wrapper {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    border: 1px solid #e8c653;
+    background-color: #f9f6ec;
+    margin-top: 56px;
+    border-radius: 8px;
+}
+.loyalty-wrapper .invite-friends-wrapper .invite-details {
+    padding: 28px 24px;
+}
+.loyalty-wrapper .invite-friends-wrapper .id-head {
+    padding: 0;
+    font-family: "CastleTBold";
+    display: flex;
+    align-items: center;
+}
+.loyalty-wrapper .invite-friends-wrapper .id-description {
+    color: #000;
+    margin-top: 12px;
+    margin-bottom: 20px;
+    font-family: "DINOT";
+    display: flex;
+    align-items: center;
+}
+.invite-btn {
+    border-radius: 8px;
+    padding: 12px 20px;
+    background: linear-gradient(135deg,#1b1005 -15.39%,#d0a71c 143.79%);
+    font-family: "DINOT-Bold";
+    color: #fff;
+    cursor: pointer;
+    padding: 12px 40px;
+}
+.loyalty-wrapper .invite-friends-wrapper .invite-images {
+    display: flex;
+    padding-right: 64px;
+}
+
+/* Task List */
+.tasks-list {
+    margin-top: 56px;
+}
+.tl-title {
+    margin-bottom: 24px;
+}
+.tl-inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+.tl-inner .store-item {
+    width: 48%;
+    display: block;
+}
+.tl-inner .item-inner {
+    box-shadow: none;
+    border: 1px solid #ecd175;
+    box-shadow: 0 0 5px rgba(162,143,255,.15);
+    overflow: hidden;
+    background-color: #fdfdfa;
+    border-radius: 8px;
+    position: relative;
+}
+.tl-inner .store-item .task-details {
+    padding-bottom: 0!important;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+.tl-inner .store-item .validity {
+    padding-top: 0!important;
+    padding-bottom: 0!important;
+    margin-top: 8px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.tl-inner .store-item .validity .valid-till {
+    font-family: "DINOT-Bold";
+}
+.tl-inner .store-item .validity .valid-date {
+    color: #6a6a6a;
+    margin: 0;
+    opacity: .6;
+    display: block;
+}
+.tl-inner .store-item .points {
+    background-color: #f5f2e3;
+    color: #1b1005;
+    padding: 11px 16px;
+    margin-top: 16px;
+    width: 100%;
+    border-top: 1px solid #ecd175;
+    font-family: "DINOT-Bold";
+    display: flex;
+    align-items: center;
+}
+.store-item .points span {
+    margin-left: 4px;
+}
+.tl-inner .item-inner>:not(.points) {
+    padding: 20px 24px;
+}
+.store-item .task-details .heading {
+    color: #000;
+    margin-bottom: 8px;
+    word-break: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-family: "CastleTBold";
+}
+.tl-inner .store-item .task-details .description {
+    color: #6a6a6a;
+    word-break: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.tasks-list .more-tasks {
+    margin-top: 28px;
+    background-color: #f2edd9;
+    font-family: "DINOT-Bold";
+    color: #371f0b;
+    border-color: #ecd175;
+    border: 1px solid #693c14;
+    border-radius: 8px;
+    padding: 10px 12px;
+    display: flex;
+    align-items: center;
+}
+.more-tasks i:last-child {
+    margin-left: auto;
+}
+
+/* Gift Card */
+.gift-card-container {
+    border-radius: 8px;
+    background-color: #f2edd9;
+    padding: 16px 130px 16px 16px;
+    border: 1px solid #e8c653;
+    position: relative;
+    overflow: hidden;
+    margin: 16px 0 24px;
+}
+.gift-card-container .gc-logo {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.gift-card-container .gc-logo img {
+    width: 148px;
+}
+.gift-card-container .gc-detail {
+    margin-bottom: 16px;
+}
+.gift-card-container .gc-detail .gcd1 {
+    color: #693c14;
+    font-size: 2rem;
+    line-height: 24px;
+    font-family: "CastleTBold";
+}
+.gift-card-container .gc-detail .gcd2 {
+    font-family: "DINOT-Bold";
+    margin-top: 12px;
+    opacity: .7;
+}
+.gift-card-container .gc-btn {
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-family: "DINPro-Black";
+    color: #1b1005;
+    margin-top: 20px;
+    background: linear-gradient(315deg,#e8c653 10.21%,#ecd175 48.48%,#d0a71c 100.78%);
+    text-transform: uppercase;
+}
+
+/* =================== MEDIA QUERY =================== */
+@media only screen and (min-width: 768px) {
+    .offer-tasks > * {width: 48.5%;}
+    .pointbox-wrapper:not(.one-campaign) .tierbox {
+        display: flex;
+        align-items: center;
+    }
+    .pointbox-wrapper:not(.one-campaign) .tierbox .tier-badge {
+        flex-direction: column;
+        margin-right: 30px;
+    }
+    .pointbox-wrapper:not(.one-campaign) .tierbox .badge-image {
+        margin-right: 0;
+        margin-bottom: 12px;
+    }
+    .pointbox-wrapper:not(.one-campaign) .tierbox .tier-name {
+        text-align: center;
+    }
+    .pointbox-wrapper:not(.one-campaign) .tierbox .tier-badge .tier-points {
+        display: none;
+    }
+    .pointbox-wrapper:not(.one-campaign) .tierbox .tier-bar-inner {
+        flex: 1;
+    }
+    .pointbox-wrapper:not(.one-campaign) .tierbox .tier-bar-inner .tier-points {
+        display: flex;
+        align-items: center;
+    }
+    .pointbox-wrapper:not(.one-campaign) .tierbox .tier-bar-inner .tier-points + .tier-bar {
+        margin-top: 8px;
+    }
+    .offer-tasks:not(.one-campaign-container):not(.offer-logout) > *:not(:first-child) {
+        margin-top: 30px;
+    }
+    .offer-tasks:not(.one-campaign-container):not(.offer-logout) > *:nth-child(2n+3) {
+        margin-left: 3%;
+    }
+    /* Shop & Win Box */
+    .shopwin-container .shopwin-header .swh-title {
+        font-size: 2.4rem;
+        line-height: 29px;
+    }
+    .shopwin-container .shopwin-bar .ct-bar-text {
+        font-size: 2rem;
+        line-height: 28px;
+    }
+    .shopwin-container .shopwin-bar .swbar-count-number {
+        font-size: 2.4rem;
+        line-height: 29px;
+    }
+    .shopwin-container .shopwin-bar .swbar-count-number span {
+        font-size: 1.6rem;
+        line-height: 24.5px;
+    }
+    /* Spin Wheel Box */
+    .spinwheel-main {
+        display: flex;
+        flex-direction: column;
+    }
+    /* Scratchcard Box */
+    .scratchcard-main {
+        display: flex;
+        flex-direction: column;
+    }
+    /* Upload Bill Box */
+    .uploadbill-main.uploadbill-half .ubm-logo {
+        width: 228px;
+        min-width: 228px;
+        margin-right: 15px;
+    }
+    .ubm-detail {
+        align-items: flex-start;
+    }
+    .ubm-detail .ubmd1 {
+        font-size: 3.2rem;
+        line-height: 39px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .banner-container.loyalty-banner {
+        padding: 16px 0 100px;
+        margin-bottom: -84px;
+    }
+    .pointbox {
+        width: 48%;
+    }
+    .pointbox .points-item:after {
+        font-size: 1.8rem;
+    }
+    .tierbox {
+        width: 49%;
+        margin-left: 3%;
+        padding: 12px 8px;
+    }
+    .tierbox:after {
+        display: none;
+    }
+    .tier-badge .badge-image {
+        width: 48px;
+        height: 48px;
+        margin-right: 8px;
+    }
+    .tier-badge .tier-points-number {
+        font-size: 1.2rem;
+        line-height: 14px;
+    }
+    .offer-tasks .shopwin-container {
+        margin-top: 70px!important;
+        margin-bottom: 16px;
+    }
+    .offer-tasks .shopwin-container:after {
+        content: "";
+        border-bottom: 1px dashed #bfbfbf;
+        left: 0;
+        width: 100%;
+        position: relative;
+        display: block;
+        z-index: 999;
+        bottom: -17px;
+    }
+    .offer-tasks>:not(:first-child) {
+        margin-top: 16px;
+    }
+    /* Shop & Win Box */
+    .shopwin-container {
+        width: 100%;
+    }
+    .shopwin-container .shopwin-header {
+        padding: 20px 12px 12px;
+    }
+    .shopwin-container .shopwin-bar {
+        padding: 0 12px 16px;
+    }
+    .shopwin-container .shopwin-bar .swbar-icon {
+        width: 36px;
+        min-width: 36px;
+    }
+    .shopwin-container .shopwin-bar .ct-bar {
+        margin-top: 6px;
+    }
+    .shopwin-container .shopwin-footer {
+        padding: 12px;
+    }
+    .shopwin-container .shopwin-footer .swf-color-btn {
+        padding: 8px 0;
+    }
+    /* Spin Wheel Box */
+    .spinwheel-main {
+        padding: 16px;
+        text-align: left;
+        overflow: hidden;
+        position: relative;
+    }
+    .swm-logo {
+        position: absolute;
+        right: 16px;
+        bottom: 0;
+    }
+    .swm-logo img {
+        width: 134px;
+    }
+    .swm-detail {
+        max-width: 170px;
+    }
+    .swm-btn {
+        width: auto;
+        padding: 10px 20px;
+    }
+    /* Scratchcard Box */
+    .scratchcard-main {
+        text-align: left;
+        padding: 16px 130px 16px 16px;
+        position: relative;
+        overflow: hidden;
+    }
+    .scm-logo {
+        position: absolute;
+        right: -30px;
+        bottom: -35px;
+    }
+    .scm-logo img {
+        width: 160px;
+    }
+    .scm-detail .scmd1 {
+        margin-top: 0;
+    }
+    .scm-btn {
+        width: auto;
+    }
+    /* Survey Box */
+    .survey-main {
+        background-color: #371f0b;
+    }
+    .survey-main .scm-logo {
+        right: 0;
+        bottom: 0;
+    }
+    .survey-main .scm-logo img {
+        width: 126px;
+    }
+    .survey-main .scm-detail .scmd1, .survey-main .scm-detail .scmd2 {
+        word-break: break-word;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    .survey-main .scm-detail .scmd1 {
+        color: #ecd175;
+    }
+    .survey-main .scm-detail .scmd2 {
+        color: #fdfdfa;
+        opacity: .8;
+    }
+    /* Invite Friends */
+    .loyalty-wrapper .invite-friends-wrapper {
+        display: flex!important;
+        margin-top: 20px;
+        background-color: #fdfdfa;
+        justify-content: flex-start;
+        border: none;
+        background-color: transparent;
+    }
+    .loyalty-wrapper .invite-friends-wrapper .invite-details {
+        padding: 0;
+    }
+    .loyalty-wrapper .invite-friends-wrapper .id-head {
+        font-family: "CastleTBold";
+    }
+    .loyalty-wrapper .invite-friends-wrapper .id-description {
+        margin-top: 6px;
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+        line-height: 14px;
+    }
+    .loyalty-wrapper .invite-friends-wrapper .invite-btn {
+        padding: 12px 20px;
+    }
+    .loyalty-wrapper .invite-friends-wrapper .invite-images {
+        padding-right: 0;
+        order: -1;
+        margin-left: 0;
+        margin-right: 12px;
+        align-items: flex-end;
+    }
+    /* Task List */
+    .tasks-list {
+        margin-top: 40px;
+    }
+    .tl-title {
+        margin-bottom: 18px;
+    }
+    .tl-inner .store-item {
+        width: 100%;
+    }
+    .store-item .points {
+        margin-top: auto;
+    }
+    .tasks-list .more-tasks {
+        margin-top: 20px;
+    }
+    /* Upload Bill */
+    .uploadbill-main {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 48px;
+    }
+    .ubm-logo {
+        width: 240px;
+        margin: 0 auto 20px;
+    }
+    .ubm-detail {
+        text-align: center;
+    }
+    .ubm-detail .ubmd2 {
+        font-size: 1.2rem;
+        line-height: 14px;
+        font-family: "DINOT-Bold";
+        color: #000;
+    }
+    .ubm-btn {
+        width: 100%;
+        justify-content: center;
+        margin-top: 20px;
+        font-size: 1.6rem;
+        line-height: 19px;
+    }
+}

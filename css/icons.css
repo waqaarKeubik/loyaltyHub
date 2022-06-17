@@ -1,0 +1,1017 @@
+.bg-icon, .bg-icon24 {
+    background-image: url("../images/bg-icons.svg");
+    background-repeat: no-repeat;
+    background-size: 500px;
+    width: 24px;
+    min-width: 24px;
+    height: 24px;
+    display: block;
+    background-color: transparent !important;
+}
+.bg-icon120 {
+  background-size: 2450px;
+  width: 120px;
+  min-width: 120px;
+  height: 120px;
+}
+.bg-icon120.bg-gift-coupon {background-position: -1332px -2849px;}
+
+.bg-icon100 {
+  background-size: 2130px;
+  width: 100px;
+  min-width: 100px;
+  height: 100px;
+}
+.bg-icon100.bg-coin {background-position: -290px 0px;}
+.bg-icon100.bg-email {background-position: -870px 0px;}
+.bg-icon100.bg-gem {background-position: -1450px 0px;}
+.bg-icon100.bg-success-tick {background-position: -1884px -436px;}
+.bg-icon100.bg-bill-rejected {background-position: -1450px -581px;}
+.bg-icon100.bg-details {background-position: -1874px -581px;}
+.bg-icon100.bg-upload-bill {background-position: -146px -1895px;}
+.bg-icon100.bg-star-coin {background-position: -1302px -1895px;}
+.bg-icon100.bg-star-gems {background-position: -1448px -1895px;}
+.bg-icon100.bg-bill-review {background-position: -725px -871px;}
+.bg-icon100.bg-error {background-position: -870px -2191px;}
+.bg-icon100.bg-finger-cross {background-position: -1016px -2191px;}
+.bg-icon100.bg-star-xp {background-position: -1304px -2191px;}
+.bg-icon100.bg-lock {background-position: -1450px -2191px;}
+.bg-icon100.bg-physical-coupon {background-position: -436px -2479px;}
+.bg-icon100.bg-gift-coupon {background-position: -1160px -2479px;}
+.bg-icon100.bg-help-desk {background-position: -1158px -2628px;}
+.bg-icon100.bg-coupon-qr {background-position: -1308px -2628px;}
+
+.bg-icon80 {
+    background-size: 1680px;
+    width: 80px;
+    min-width: 80px;
+    height: 80px;
+}
+.bg-icon80.bg-coin {background-position: -228px 0px;}
+.bg-icon80.bg-email {background-position: -685px 0px;}
+.bg-icon80.bg-information {background-position: -572px -343px;}
+.bg-icon80.bg-booking-success {background-position: -1254px -686px;}
+.bg-icon80.bg-coupons-yellow {background-position: -1598px -800px;}
+.bg-icon80.bg-faq {background-position: -1256px -915px;}
+.bg-icon80.bg-shield {background-position: -1371px -915px;}
+.bg-icon80.bg-contact-msg {background-position: -1485px -915px;}
+.bg-icon80.bg-about {background-position: -343px -1028px;}
+.bg-icon80.bg-gift {background-position: -912px -1029px;}
+.bg-icon80.bg-star-gems {background-position: -1142px -1491px;}
+.bg-icon80.bg-star-points {background-position: -1483px -1491px;}
+.bg-icon80.bg-xp {background-position: -1030px -1729px;}
+.bg-icon80.bg-lock {background-position: -1142px -1727px;}
+.bg-icon80.bg-gift-coupon {background-position: -914px -1955px;}
+
+.bg-icon64 {
+    background-size: 1360px;
+    width: 64px;
+    min-width: 64px;
+    height: 64px;
+}
+.bg-icon64.bg-rewards {background-position: -1294px -185px;}
+.bg-icon64.bg-calendar {background-position: -93px -278px;}
+.bg-icon64.bg-success-tick {background-position: -1203px -278px;}
+.bg-icon64.bg-share-whatsapp {background-position: 0px -370px;}
+.bg-icon64.bg-share-facebook {background-position: -94px -370px;}
+.bg-icon64.bg-share-twitter {background-position: -186px -370px;}
+.bg-icon64.bg-share-email {background-position: -278px -370px;}
+.bg-icon64.bg-details {background-position: -1197px -370px;}
+.bg-icon64.bg-booking-success {background-position: -1018px -555px;}
+.bg-icon64.bg-coupons-yellow {background-position: -1294px -647px;}
+.bg-icon64.bg-gift {background-position: -739px -833px;}
+.bg-icon64.bg-rewards-white {background-position: -1018px -1210px;}
+.bg-icon64.bg-unknown {background-position: -1018px -1398px;}
+
+.bg-icon40 {
+    background-size: 840px;
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+}
+.bg-icon40.bg-coin {background-position: -114px 0px;}
+.bg-icon40.bg-gem {background-position: -571px 0px;}
+.bg-icon40.bg-xp {background-position: -115px -115px;}
+.bg-icon40.bg-rewards {background-position: -685px -114px;}
+.bg-icon40.bg-confetti {background-position: -114px -171px;}
+.bg-icon40.bg-information {background-position: -286px -171px;}
+.bg-icon40.bg-unlock-purple {background-position: -628px -171px;}
+.bg-icon40.bg-share-whatsapp {background-position: 0px -229px;}
+.bg-icon40.bg-share-facebook {background-position: -58px -229px;}
+.bg-icon40.bg-share-twitter {background-position: -114px -229px;}
+.bg-icon40.bg-help {background-position: -457px -229px;}
+.bg-icon40.bg-activities {background-position: -628px -286px;}
+.bg-icon40.bg-qrscan {background-position: -686px -286px;}
+.bg-icon40.bg-transaction-history {background-position: -743px -286px;}
+.bg-icon40.bg-parking-car {background-position: -800px -286px;}
+.bg-icon40.bg-booking {background-position: 0px -343px;}
+.bg-icon40.bg-coupon-history {background-position: -58px -343px;}
+.bg-icon40.bg-support {background-position: -343px -343px;}
+.bg-icon40.bg-privacy-policy {background-position: -400px -343px;}
+.bg-icon40.bg-select-tag {background-position: -802px -343px;}
+.bg-icon40.bg-coupons-pink {background-position: -572px -400px;}
+.bg-icon40.bg-feeds-pink {background-position: -628px -400px;}
+.bg-icon40.bg-camera {background-position: -743px -400px;}
+.bg-icon40.bg-coupons-yellow {background-position: -800px -400px;}
+.bg-icon40.bg-gift {background-position: -457px -514px;}
+.bg-icon40.bg-catalogue {background-position: 0px -572px;}
+.bg-icon40.bg-scratchcard {background-position: -798px -747px;}
+.bg-icon40.bg-scratchcard-new {background-position: -172px -806px;}
+.bg-icon40.bg-store {background-position: -686px -229px;}
+.bg-icon40.bg-wheel {background-position: -457px -864px;}
+.bg-icon40.bg-like-gold {background-position: -685px -920px;}
+.bg-icon40.bg-gift-coupon {background-position: -457px -978px;}
+.bg-icon40.bg-message {background-position: -172px -1094px;}
+.bg-icon40.bg-share-gold {background-position: -742px -689px;}
+
+.bg-icon32 {
+    background-size: 680px;
+    width: 32px;
+    min-width: 32px;
+    height: 32px;
+}
+.bg-icon32.bg-clap {background-position: -46px 0px;}
+.bg-icon32.bg-coin {background-position: -93px 0px;}
+.bg-icon32.bg-gem {background-position: -463px 0px;}
+.bg-icon32.bg-info {background-position: -555px 0px;}
+.bg-icon32.bg-like {background-position: -648px 0px;}
+.bg-icon32.bg-load_more {background-position: -47px -47px;}
+.bg-icon32.bg-mall_feed {background-position: -138px -46px;}
+.bg-icon32.bg-phone {background-position: -232px -46px;}
+.bg-icon32.bg-xp {background-position: -93px -93px;}
+.bg-icon32.bg-book_parking {background-position: -185px -93px;}
+.bg-icon32.bg-book_visit {background-position: -232px -93px;}
+.bg-icon32.bg-hands_free {background-position: -416px -93px;}
+.bg-icon32.bg-unlock_rewards {background-position: -648px -93px;}
+.bg-icon32.bg-success-tick {background-position: -600px -138px;}
+.bg-icon32.bg-help {background-position: -370px -185px;}
+.bg-icon32.bg-details {background-position: -598px -185px;}
+.bg-icon32.bg-phonebook {background-position: -646px -185px;}
+.bg-icon32.bg-qrscan {background-position: -555px -232px;}
+.bg-icon32.bg-support {background-position: -277px -277px;}
+.bg-icon32.bg-privacy-policy {background-position: -323px -277px;}
+.bg-icon32.bg-parking-red {background-position: -278px -324px;}
+.bg-icon32.bg-calendar-red {background-position: -324px -324px;}
+.bg-icon32.bg-coupons-yellow {background-position: -647px -324px;}
+.bg-icon32.bg-contactless-payment {background-position: -648px -370px;}
+.bg-icon32.bg-contactless-dining {background-position: 0px -417px;}
+.bg-icon32.bg-earnburn {background-position: -47px -417px;}
+.bg-icon32.bg-updates {background-position: -93px -417px;}
+.bg-icon32.bg-gift {background-position: -370px -417px;}
+.bg-icon32.bg-help-brown {background-position: -185px -605px;}
+.bg-icon32.bg-remove-red {background-position: -277px -652px;}
+.bg-icon32.bg-star {background-position: -47px -653px;}
+.bg-icon32.bg-favourite-liked {background-position: -186px -700px;}
+.bg-icon32.bg-favourite-disliked {background-position: -232px -700px;}
+.bg-icon32.bg-past {background-position: -555px -700px;}
+.bg-icon32.bg-heart-red {background-position: -509px -746px;}
+.bg-icon32.bg-gift-coupon {background-position: -370px -791px;}
+.bg-icon32.bg-clock-grey {background-position: -463px -839px;}
+.bg-icon32.bg-refresh {background-position: -508px -839px;}
+.bg-icon32.bg-rightline-white-arrow {background-position: -556px -839px;}
+.bg-icon32.bg-readmore {background-position: -602px -839px;}
+.bg-icon32.bg-drag {background-position: -644px -839px;}
+.bg-icon32.bg-tutorial {background-position: -462px -886px;}
+
+.bg-icon28 {
+    background-size: 570px;
+    width: 28px;
+    min-width: 28px;
+    height: 28px;
+}
+.bg-icon28.bg-left-arrow {background-position: -40px -467px;}
+.bg-icon28.bg-clock-grey {background-position: -388px -703px;}
+
+.bg-icon20 {
+  background-size: 420px;
+  width: 20px;
+  min-width: 20px;
+  height: 20px;
+}
+.bg-icon20.bg-clap {background-position: -29px 0px;}
+.bg-icon20.bg-coin {background-position: -57px 0px;}
+.bg-icon20.bg-completed {background-position: -86px 0px;}
+.bg-icon20.bg-completed_task {background-position: -114px 0px;}
+.bg-icon20.bg-floor {background-position: -257px 0px;}
+.bg-icon20.bg-gem {background-position: -285px 0px;}
+.bg-icon20.bg-heart {background-position: -314px 0px;}
+.bg-icon20.bg-info {background-position: -343px 0px;}
+.bg-icon20.bg-like {background-position: -400px 0px;}
+.bg-icon20.bg-like_feed {background-position: 0px -29px;}
+.bg-icon20.bg-load_more {background-position: -29px -29px;}
+.bg-icon20.bg-terms_conditions {background-position: -286px -29px;}
+.bg-icon20.bg-unlock_coupons {background-position: -371px -57px;}
+.bg-icon20.bg-unlock_rewards {background-position: -399px -57px;}
+.bg-icon20.bg-xp {background-position: -58px -58px;}
+.bg-icon20.bg-calendar {background-position: -29px -86px;}
+.bg-icon20.bg-confetti {background-position: -58px -86px;}
+.bg-icon20.bg-edit {background-position: -86px -86px;}
+.bg-icon20.bg-gender {background-position: -115px -86px;}
+.bg-icon20.bg-information {background-position: -143px -86px;}
+.bg-icon20.bg-stroller {background-position: -172px -86px;}
+.bg-icon20.bg-timer {background-position: -200px -86px;}
+.bg-icon20.bg-wheelchair {background-position: -228px -86px;}
+.bg-icon20.bg-copyclipboard {background-position: -257px -86px;}
+.bg-icon20.bg-success-tick {background-position: -370px -85px;}
+.bg-icon20.bg-anniversary {background-position: -86px -143px;}
+.bg-icon20.bg-cake {background-position: -114px -143px;}
+.bg-icon20.bg-gender-black {background-position: -143px -143px;}
+.bg-icon20.bg-mail {background-position: -172px -143px;}
+.bg-icon20.bg-call {background-position: -200px -143px;}
+.bg-icon20.bg-name {background-position: -229px -143px;}
+.bg-icon20.bg-remove-image {background-position: -257px -143px;}
+.bg-icon20.bg-upload-image {background-position: -286px -143px;}
+.bg-icon20.bg-parking-car {background-position: -400px -143px;}
+.bg-icon20.bg-coupons-yellow {background-position: -400px -200px;}
+.bg-icon20.bg-gift {background-position: -228px -257px;}
+.bg-icon20.bg-right-gold-arrow {background-position: -228px -315px;}
+.bg-icon20.bg-close {background-position: -315px -315px;}
+.bg-icon20.bg-left-arrow {background-position: -29px -344px;}
+.bg-icon20.bg-brown-arrow {background-position: -256px -344px;}
+.bg-icon20.bg-tick {background-position: -344px -344px;}
+.bg-icon20.bg-timer-black {background-position: -114px -403px;}
+.bg-icon20.bg-edit-brown {background-position: -228px -403px;}
+.bg-icon20.bg-favourite-liked {background-position: -114px -432px;}
+.bg-icon20.bg-favourite-disliked {background-position: -143px -432px;}
+.bg-icon20.bg-like-white {background-position: -371px -460px;}
+.bg-icon20.bg-share-white {background-position: 0px -488px;}
+.bg-icon20.bg-close-grey {background-position: -57px -488px;}
+.bg-icon20.bg-timer-grey {background-position: -171px -488px;}
+.bg-icon20.bg-expiring-alert {background-position: -257px -488px;}
+.bg-icon20.bg-right-brown-arrow {background-position: -342px -488px;}
+.bg-icon20.bg-down-grey-arrow {background-position: -372px -488px;}
+.bg-icon20.bg-gift-black {background-position: -285px -488px;}
+.bg-icon20.bg-rightline-black-arrow {background-position: 0px -518px;}
+.bg-icon20.bg-leftline-brown-arrow {background-position: -29px -518px;}
+.bg-icon20.bg-enter {background-position: -57px -518px;}
+.bg-icon20.bg-shift {background-position: -86px -518px;}
+.bg-icon20.bg-white-tick {background-position: -114px -518px;}
+.bg-icon20.bg-filled-tick {background-position: -143px -518px;}
+.bg-icon20.bg-celebration {background-position: -172px -518px;}
+.bg-icon20.bg-star-struck {background-position: -200px -518px;}
+.bg-icon20.bg-clock-grey {background-position: -285px -518px;}
+.bg-icon20.bg-refresh {background-position: -314px -518px;}
+.bg-icon20.bg-rightline-white-arrow {background-position: -343px -518px;}
+.bg-icon20.bg-readmore {background-position: -372px -518px;}
+.bg-icon20.bg-drag {background-position: -398px -518px;}
+
+.bg-icon16 {
+    background-size: 340px;
+    width: 16px;
+    min-width: 16px;
+    height: 16px;
+}
+.bg-icon16.bg-clap {background-position: -23px 0px;}
+.bg-icon16.bg-coin {background-position: -46px 0px;}
+.bg-icon16.bg-copyright {background-position: -116px 0px;}
+.bg-icon16.bg-gem {background-position: -231px 0px;}
+.bg-icon16.bg-heart {background-position: -254px 0px;}
+.bg-icon16.bg-like {background-position: -324px 0px;}
+.bg-icon16.bg-like_feed {background-position: 0px -24px;}
+.bg-icon16.bg-load_more {background-position: -24px -23px;}
+.bg-icon16.bg-location {background-position:-46px -23px;}
+.bg-icon16.bg-phone_number {background-position: -93px -23px;}
+.bg-icon16.bg-phone {background-position: -116px -23px;}
+.bg-icon16.bg-share_feed {background-position: -162px -24px;}
+.bg-icon16.bg-unlock {background-position: -301px -23px;}
+.bg-icon16.bg-video_play {background-position: 0px -46px;}
+.bg-icon16.bg-xp {background-position: -46px -46px;}
+.bg-icon16.bg-unlock_coupons {background-position: -301px -46px;}
+.bg-icon16.bg-calendar {background-position: -24px -69px;}
+.bg-icon16.bg-confetti {background-position: -47px -69px;}
+.bg-icon16.bg-edit {background-position: -70px -69px;}
+.bg-icon16.bg-gender {background-position: -93px -69px;}
+.bg-icon16.bg-information {background-position: -116px -69px;}
+.bg-icon16.bg-stroller {background-position: -139px -69px;}
+.bg-icon16.bg-timer {background-position: -162px -69px;}
+.bg-icon16.bg-wheelchair {background-position: -185px -69px;}
+.bg-icon16.bg-unlock-purple {background-position: -255px -70px;}
+.bg-icon16.bg-rupees {background-position: -138px -93px;}
+.bg-icon16.bg-help-black {background-position: -162px -93px;}
+.bg-icon16.bg-help {background-position: -185px -93px;}
+.bg-icon16.bg-bill {background-position: -208px -93px;}
+.bg-icon16.bg-store {background-position: -277px -93px;}
+.bg-icon16.bg-details {background-position: -300px -93px;}
+.bg-icon16.bg-qrscan {background-position: -277px -115px;}
+.bg-icon16.bg-points-up-arrow {background-position: -47px -139px;}
+.bg-icon16.bg-points-down-arrow {background-position: -70px -139px;}
+.bg-icon16.bg-expiring {background-position: -93px -139px;}
+.bg-icon16.bg-minus {background-position: -185px -139px;}
+.bg-icon16.bg-plus {background-position: -208px -139px;}
+.bg-icon16.bg-address-black {background-position: -301px -139px;}
+.bg-icon16.bg-lift {background-position: -93px -93px;}
+.bg-icon16.bg-coupons {background-position: -116px -93px;}
+.bg-icon16.bg-right-arrow {background-position: -208px -162px;}
+.bg-icon16.bg-clock {background-position: -116px -162px;}
+.bg-icon16.bg-camera {background-position: -301px -162px;}
+.bg-icon16.bg-coupons-yellow {background-position: -324px -162px;}
+.bg-icon16.bg-gift {background-position: -185px -208px;}
+.bg-icon16.bg-bill-brown {background-position: -324px -231px;}
+.bg-icon16.bg-left-arrow {background-position: -23px -279px;}
+.bg-icon16.bg-brown-arrow {background-position: -207px -279px;}
+.bg-icon16.bg-close-brown2 {background-position: -254px -278px;}
+.bg-icon16.bg-tick {background-position: -277px -279px;}
+.bg-icon16.bg-help-brown {background-position: -92px -303px;}
+.bg-icon16.bg-close-white {background-position: -162px -303px;}
+.bg-icon16.bg-information-white {background-position: -278px -302px;}
+.bg-icon16.bg-edit-brown {background-position: -185px -326px;}
+.bg-icon16.bg-heart-red {background-position: -255px -373px;}
+.bg-icon16.bg-like-white {background-position: -300px -373px;}
+.bg-icon16.bg-share-white {background-position: 0px -395px;}
+.bg-icon16.bg-close-grey {background-position: -47px -396px;}
+.bg-icon16.bg-phone-brown {background-position: -116px -396px;}
+.bg-icon16.bg-expiring-alert {background-position: -208px -396px;}
+.bg-icon16.bg-right-brown-arrow {background-position: -276px -396px;}
+.bg-icon16.bg-down-grey-arrow {background-position: -301px -396px;}
+.bg-icon16.bg-eye-brown {background-position: -322px -396px;}
+.bg-icon16.bg-rightline-black-arrow {background-position: 0px -420px;}
+.bg-icon16.bg-leftline-brown-arrow {background-position: -23px -420px;}
+.bg-icon16.bg-enter {background-position: -46px -420px;}
+.bg-icon16.bg-shift {background-position: -70px -420px;}
+.bg-icon16.bg-white-tick {background-position: -93px -420px;}
+.bg-icon16.bg-filled-tick {background-position: -116px -420px;}
+.bg-icon16.bg-celebration {background-position: -139px -420px;}
+.bg-icon16.bg-star-struck {background-position: -162px -420px;}
+.bg-icon16.bg-clock-grey {background-position: -231px -420px;}
+.bg-icon16.bg-refresh {background-position: -254px -420px;}
+.bg-icon16.bg-rightline-white-arrow {background-position: -277px -420px;}
+.bg-icon16.bg-readmore {background-position: -301px -420px;}
+.bg-icon16.bg-drag {background-position: -321px -420px;}
+.bg-icon16.bg-home-grey {background-position: -161px -443px;}
+.bg-icon16.bg-store-info {background-position: -254px -443px;}
+.bg-icon16.bg-coupon-info {background-position: -278px -443px;}
+.bg-icon16.bg-catalogue-info {background-position: -300px -443px;}
+.bg-icon16.bg-feed-info {background-position: -321px -443px;}
+.bg-icon16.bg-store-info-white {background-position: -22px -470px;}
+.bg-icon16.bg-coupon-info-white {background-position: -46px -470px;}
+.bg-icon16.bg-catalogue-info-white {background-position: -70px -470px;}
+.bg-icon16.bg-feed-info-white {background-position: -92px -470px;}
+.bg-icon16.bg-coupon-info-black {background-position: -116px -470px;}
+
+.bg-icon13  {
+  background-size: 260px;
+  width: 13px;
+  min-width: 13px;
+  height: 13px;
+}
+.bg-icon13.bg-clap {background-position: -18px 0;}
+.bg-icon13.bg-copyright {background-position: -88px 0px;}
+.bg-icon13.bg-heart {background-position: -195px 0;}
+.bg-icon13.bg-like {background-position: -248px 0;}
+.bg-icon13.bg-unlock {background-position: -229px -17px;}
+.bg-icon13.bg-unlock-purple {background-position: -194px -53px;}
+.bg-icon13.bg-help-black {background-position: -124px -70px;}
+.bg-icon13.bg-help {background-position: -141px -70px;}
+.bg-icon13.bg-expired {background-position: 0px -88px;}
+.bg-icon13.bg-rupees {background-position: -228px -88px;}
+.bg-icon13.bg-points-up-arrow {background-position: -35px -105px;}
+.bg-icon13.bg-points-down-arrow {background-position: -53px -105px;}
+.bg-icon13.bg-expiring {background-position: -70px -105px;}
+.bg-icon13.bg-minus {background-position: -141px -105px;}
+.bg-icon13.bg-plus {background-position: -159px -105px;}
+.bg-icon13.bg-info-red {background-position: -177px -105px;}
+.bg-icon13.bg-close-brown2 {background-position: -195px -212px;}
+.bg-icon13.bg-brown-arrow {background-position: -158px -212px;}
+.bg-icon13.bg-close-brown {background-position: -106px -231px;}
+.bg-icon13.bg-close-white {background-position: -124px -231px;}
+.bg-icon13.bg-rupees-brown {background-position: 0px -249px;}
+.bg-icon13.bg-star-brown {background-position: -158px -285px;}
+.bg-icon13.bg-heart-red {background-position: -195px -285px;}
+.bg-icon13.bg-close-grey {background-position: -34px -302px;}
+.bg-icon13.bg-phone-brown {background-position: -88px -302px;}
+.bg-icon13.bg-right-brown-arrow {background-position: -211px -302px;}
+.bg-icon13.bg-eye-brown {background-position: -245px -302px;}
+.bg-icon13.bg-down-grey-arrow {background-position: -229px -302px;}
+.bg-icon13.bg-rightline-black-arrow {background-position: 0px -321px;}
+.bg-icon13.bg-leftline-brown-arrow {background-position: -18px -321px;}
+.bg-icon13.bg-enter {background-position: -35px -321px;}
+.bg-icon13.bg-shift {background-position: -53px -321px;}
+.bg-icon13.bg-white-tick {background-position: -70px -321px;}
+.bg-icon13.bg-filled-tick {background-position: -88px -321px;}
+.bg-icon13.bg-celebration {background-position: -106px -321px;}
+.bg-icon13.bg-star-struck {background-position: -124px -321px;}
+.bg-icon13.bg-clock-grey {background-position: -176px -321px;}
+.bg-icon13.bg-refresh {background-position: -194px -321px;}
+.bg-icon13.bg-rightline-white-arrow {background-position: -212px -321px;}
+.bg-icon13.bg-readmore {background-position: -230px -321px;}
+.bg-icon13.bg-drag {background-position: -246px -321px;}
+.bg-icon13.bg-close {background-position: -194px -177px;}
+
+.clear-icon {
+  width: 14px;
+  height: 14px;
+  position: relative;
+  display: flex;
+}
+.clear-icon:before, .clear-icon:after {
+    position: absolute;
+    left: 6px;
+    top: 0;
+    content: '';
+    height: 14px;
+    width: 2px;
+    background-color: #d0a71c;
+}
+.clear-icon:before {
+    transform: rotate(45deg);
+}
+.clear-icon:after {
+    transform: rotate(-45deg);
+}
+  
+/* Icons Rotate */
+.icon-rotate-minus-90 {transform: rotate(-90deg);}
+.icon-rotate-plus-90 {transform: rotate(90deg);}
+.icon-rotate-plus-180 {transform: rotate(180deg);}
+.icon-rotate-plus-270 {transform: rotate(270deg);}
+
+/* Icons Margin */
+.icon-leftspace12 {margin-left: 12px;}
+.icon-rightspace12 {margin-right: 12px;}
+.icon-rightspace {margin-right: 8px;}
+.icon-leftspace {margin-left: 8px;}
+.icon-rightspace-half {margin-right: 4px;}
+.icon-leftspace-half {margin-left: 4px;}
+
+/* Icons List */
+/* Row1 */
+.bg-address {background-position: 0px 0px;}
+.bg-clap {background-position: -34px 0px;}
+.bg-coin {background-position: -68px 0px;}
+.bg-completed_task {background-position: -102px 0px;}
+.bg-completed {background-position: -136px 0px;}
+.bg-copyright {background-position: -170px 0px;}
+.bg-email {background-position: -204px 0px;}
+.bg-facebook {background-position: -238px 0px;}
+.bg-featured {background-position: -272px 0px;}
+.bg-floor {background-position: -306px 0px;}
+.bg-gem {background-position: -340px 0px;}
+.bg-heart {background-position: -374px 0px;}
+.bg-info {background-position: -408px 0px;}
+.bg-instagram {background-position: -442px 0px;}
+.bg-like {background-position: -476px 0px;}
+/* Row2 */
+.bg-like_feed {background-position: 0px -34px;}
+.bg-load_more {background-position: -34px -34px;}
+.bg-location {background-position: -68px -34px;}
+.bg-mall_feed_all {background-position: -102px -34px;}
+.bg-phone_number {background-position: -136px -34px;}
+.bg-phone {background-position: -170px -34px;}
+.bg-share {background-position: -204px -34px;}
+.bg-share_feed {background-position: -238px -34px;}
+.bg-spin_wheel {background-position: -272px -34px;}
+.bg-store_contact {background-position: -306px -34px;}
+.bg-terms_conditions {background-position: -340px -34px;}
+.bg-tier_badge {background-position: -374px -34px;}
+.bg-twitter {background-position: -408px -34px;}
+.bg-unlock {background-position: -442px -34px;}
+.bg-upload_bills {background-position: -476px -34px;}
+/* Row3 */
+.bg-video_play {background-position: 0px -68px;}
+.bg-wallet {background-position: -34px -68px;}
+.bg-xp {background-position: -68px -68px;}
+.bg-youtube {background-position: -102px -68px;}
+.bg-book_parking {background-position: -136px -68px;}
+.bg-book_visit {background-position: -170px -68px;}
+.bg-earn_zone {background-position: -204px -68px;}
+.bg-explore {background-position: -238px -68px;}
+.bg-find_store {background-position: -272px -68px;}
+.bg-hands_free {background-position: -306px -68px;}
+.bg-login {background-position: -340px -68px;}
+.bg-mall_feed {background-position: -374px -68px;}
+.bg-rewards {background-position: -408px -68px;}
+.bg-unlock_coupons {background-position: -442px -68px;}
+.bg-unlock_rewards {background-position: -476px -68px;}
+/* Row4 */
+.bg-visit {background-position: 0px -102px;}
+.bg-calendar {background-position: -34px -102px;}
+.bg-confetti {background-position: -68px -102px;}
+.bg-edit {background-position: -102px -102px;}
+.bg-gender {background-position: -136px -102px;}
+.bg-information {background-position: -170px -102px;}
+.bg-stroller {background-position: -204px -102px;}
+.bg-timer {background-position: -238px -102px;}
+.bg-wheelchair {background-position: -272px -102px;}
+.bg-copyclipboard {background-position: -306px -102px;}
+.bg-transfer {background-position: -340px -102px;}
+.bg-unlock-purple {background-position: -374px -102px;}
+.bg-coupon-redeemed {background-position: -408px -102px;}
+.bg-success-tick {background-position: -442px -102px;}
+.bg-filter {background-position: -476px -102px;}
+/* Row5 */
+.bg-share-whatsapp {background-position: 0px -136px;}
+.bg-share-facebook {background-position: -34px -136px;}
+.bg-share-twitter {background-position: -68px -136px;}
+.bg-share-email {background-position: -102px -136px;}
+.bg-lift {background-position: -136px -136px;}
+.bg-coupons {background-position: -170px -136px;}
+.bg-rupees {background-position: -204px -136px;}
+.bg-help-black {background-position: -238px -136px;}
+.bg-help {background-position: -272px -136px;}
+.bg-bill {background-position: -306px -136px;}
+.bg-bill-rejected {background-position: -340px -136px;}
+.bg-bought-gem {background-position: -374px -136px;}
+.bg-store {background-position: -408px -136px;}
+.bg-details {background-position: -442px -136px;}
+.bg-phonebook {background-position: -476px -136px;}
+/* Row6 */
+.bg-expired {background-position: 0px -170px;}
+.bg-task-done {background-position: -35px -170px;}
+.bg-logout {background-position: -68px -170px;}
+.bg-anniversary {background-position: -102px -170px;}
+.bg-cake {background-position: -136px -170px;}
+.bg-gender-black {background-position: -170px -170px;}
+.bg-mail {background-position: -204px -170px;}
+.bg-call {background-position: -238px -170px;}
+.bg-name {background-position: -272px -170px;}
+.bg-remove-image {background-position: -306px -170px;}
+.bg-upload-image {background-position: -340px -170px;}
+.bg-activities {background-position: -374px -170px;}
+.bg-upload_bills_gold {background-position: -408px -170px;}
+.bg-qrscan {background-position: -408px -170px;}
+.bg-transaction-history {background-position: -442px -170px;}
+.bg-parking-car {background-position: -476px -170px;}
+/* Row7 */
+.bg-booking {background-position: 0px -204px;}
+.bg-coupon-history {background-position: -35px -204px;}
+.bg-points-up-arrow {background-position: -68px -204px;}
+.bg-points-down-arrow {background-position: -102px -204px;}
+.bg-expiring {background-position: -136px -204px;}
+.bg-bill-review {background-position: -170px -204px;}
+.bg-support {background-position: -204px -204px;}
+.bg-privacy-policy {background-position: -238px -204px;}
+.bg-minus {background-position: -272px -204px;}
+.bg-plus {background-position: -306px -204px;}
+.bg-info-red {background-position: -340px -204px;}
+.bg-booking-success {background-position: -374px -204px;}
+.bg-gps {background-position: -408px -204px;}
+.bg-address-black {background-position: -442px -204px;}
+.bg-select-tag {background-position: -476px -204px;}
+/* Row8 */
+.bg-visit-white {background-position: 0px -238px;}
+.bg-explore-white {background-position: -34px -238px;}
+.bg-rewards-white {background-position: -68px -238px;}
+.bg-search-white {background-position: -102px -238px;}
+.bg-login-white {background-position: -136px -238px;}
+.bg-clock {background-position: -170px -238px;}
+.bg-parking-red {background-position: -204px -238px;}
+.bg-calendar-red {background-position: -238px -238px;}
+.bg-right-arrow {background-position: -306px -238px;}
+.bg-coupons-pink {background-position: -340px -238px;}
+.bg-feeds-pink {background-position: -374px -238px;}
+.bg-search {background-position: -408px -238px;}
+.bg-camera {background-position: -442px -238px;}
+.bg-coupons-yellow {background-position: -476px -238px;}
+/* Row9 */
+.bg-event {background-position: -170px -272px;}
+.bg-parking-blue {background-position: -204px -272px;}
+.bg-expired-blue {background-position: -238px -272px;}
+.bg-game {background-position: -272px -272px;}
+.bg-level-up {background-position: -306px -272px;}
+.bg-system-update {background-position: -340px -272px;}
+.bg-faq {background-position: -374px -272px;}
+.bg-shield {background-position: -408px -272px;}
+.bg-contact-msg {background-position: -442px -272px;}
+.bg-contactless-payment {background-position: -476px -272px;}
+/* Row10 */
+.bg-contactless-dining {background-position: 0px -306px;}
+.bg-earnburn {background-position: -34px -306px;}
+.bg-updates {background-position: -68px -306px;}
+.bg-about {background-position: -102px -306px;}
+.bg-gift {background-position: -272px -306px;}
+.bg-restroom {background-position: -440px -306px;}
+.bg-home {background-position: -476px -306px;}
+/* Row11 */
+.bg-escalator {background-position: -34px -341px;}
+.bg-atm {background-position: -68px -341px;}
+.bg-menu {background-position: -272px -341px;}
+.bg-close {background-position: -375px -340px;}
+.bg-remove {background-position: -407px -340px;}
+.bg-bill-brown {background-position: -476px -340px;}
+/* Row12 */
+.bg-navfrom {background-position: -237px -376px;}
+.bg-right-gold-arrow {background-position: -272px -375px;}
+/* Row13 */
+.bg-left-arrow {background-position: -34px -410px;}
+.bg-dineout {background-position: -272px -410px;}
+.bg-brown-arrow {background-position: -305px -410px;}
+.bg-transfer-gold {background-position: -340px -410px;}
+.bg-close-brown2 {background-position: -375px -410px;}
+.bg-tick {background-position: -408px -410px;}
+.bg-share-gold {background-position: -442px -410px;}
+/* Row14 */
+.bg-upload-bill {background-position: -34px -445px;}
+.bg-details-white {background-position: -69px -445px;}
+.bg-upload-device {background-position: -102px -445px;}
+.bg-help-brown {background-position: -136px -445px;}
+.bg-close-brown {background-position: -205px -445px;}
+.bg-close-white {background-position: -238px -445px;}
+.bg-scratchcard {background-position: -475px -445px;}
+/* Row15 */
+.bg-wallet-brown {background-position: -68px -480px;}
+.bg-timer-black {background-position: -136px -480px;}
+.bg-note {background-position: -170px -480px;}
+.bg-remove-red {background-position: -204px -480px;}
+.bg-remove-grey {background-position: -238px -480px;}
+.bg-edit-brown {background-position: -272px -480px;}
+.bg-plus-white {background-position: -306px -480px;}
+.bg-search-brown {background-position: -340px -480px;}
+.bg-store-brown {background-position: -374px -480px;}
+.bg-today {background-position: -408px -480px;}
+.bg-tomorrow {background-position: -442px -480px;}
+.bg-book-table {background-position: -474px -480px;}
+/* Row16 */
+.bg-favourite-liked {background-position: -136px -514px;}
+.bg-favourite-disliked {background-position: -170px -514px;}
+.bg-error {background-position: -204px -514px;}
+.bg-finger-cross {background-position: -238px -514px;}
+.bg-wheel {background-position: -272px -514px;}
+.bg-star-xp {background-position: -307px -514px;}
+.bg-lock {background-position: -340px -514px;}
+.bg-unknown {background-position: -374px -514px;}
+.bg-past {background-position: -408px -514px;}
+.bg-tick-brown {background-position: -443px -514px;}
+.bg-pause {background-position: -474px -514px;}
+/* Row17 */
+.bg-tier {background-position: -272px -548px;}
+.bg-referral {background-position: -170px -548px;}
+.bg-tier-recurring {background-position: -238px -548px;}
+.bg-activity-scan {background-position: 0px -548px;}
+.bg-manual {background-position: -102px -548px;}
+.bg-shop-win {background-position: -204px -548px;}
+.bg-event-refund {background-position: -68px -548px;}
+.bg-parking-refund {background-position: -136px -548px;}
+.bg-birthday-anniversary {background-position: -34px -548px;}
+.bg-star-brown {background-position: -306px -548px;}
+.bg-copyclipboard-brown {background-position: -340px -548px;}
+.bg-heart-red {background-position: -374px -548px;}
+.bg-like-gold {background-position: -408px -548px;}
+.bg-like-white {background-position: -442px -548px;}
+.bg-email-brown {background-position: -474px -548px;}
+/* Row18 */
+.bg-share-white {background-position: 0px -582px;}
+.bg-filter-grey {background-position: -34px -582px;}
+.bg-close-grey {background-position: -68px -582px;}
+.bg-physical-coupon {background-position: -102px -582px;}
+.bg-gift-brown {background-position: -136px -582px;}
+.bg-phone-brown {background-position: -170px -582px;}
+.bg-timer-grey {background-position: -204px -582px;}
+.bg-eye-white {background-position: -238px -582px;}
+.bg-gift-coupon {background-position: -272px -582px;}
+.bg-expiring-alert {background-position: -306px -582px;}
+.bg-gift-black {background-position: -340px -582px;}
+.bg-right-brown-arrow {background-position: -408px -582px;}
+.bg-down-grey-arrow {background-position: -442px -582px;}
+.bg-eye-brown {background-position: -474px -582px;}
+/* Row19 */
+.bg-rightline-black-arrow {background-position: 0px -616px;}
+.bg-leftline-brown-arrow {background-position: -34px -616px;}
+.bg-enter {background-position: -68px -616px;}
+.bg-shift {background-position: -102px -616px;}
+.bg-white-tick {background-position: -136px -616px;}
+.bg-filled-tick {background-position: -170px -616px;}
+.bg-celebration {background-position: -204px -616px;}
+.bg-star-struck {background-position: -238px -616px;}
+.bg-help-desk {background-position: -272px -616px;}
+.bg-coupon-qr {background-position: -306px -616px;}
+.bg-clock-grey {background-position: -340px -616px;}
+.bg-refresh {background-position: -374px -616px;}
+.bg-rightline-white-arrow {background-position: -408px -616px;}
+.bg-readmore {background-position: -442px -616px;}
+.bg-drag {background-position: -474px -616px;}
+/* Row20 */
+.bg-help-dark-black {background-position: 0px -651px;}
+.bg-add-person {background-position: -34px -651px;}
+.bg-qrscan-brown {background-position: -68px -651px;}
+.bg-task-done-brown {background-position: -102px -651px;}
+.bg-message {background-position: -136px -651px;}
+.bg-arrow-white {background-position: -170px -651px;}
+.bg-help-white {background-position: -204px -651px;}
+.bg-home-grey {background-position: -238px -651px;}
+.bg-info-grey {background-position: -272px -651px;}
+.bg-rotator {background-position: -306px -651px;}
+.bg-tutorial {background-position: -340px -651px;}
+.bg-store-info {background-position: -374px -651px;}
+.bg-coupon-info {background-position: -408px -651px;}
+.bg-catalogue-info {background-position: -442px -651px;}
+.bg-feed-info {background-position: -471px -651px;}
+/* Row21 */
+.bg-navigate {background-position: 0px -691px;}  
+.bg-store-info-white {background-position: -32px -691px;}
+.bg-coupon-info-white {background-position: -68px -691px;}
+.bg-catalogue-info-white {background-position: -102px -691px;}
+.bg-feed-info-white {background-position: -135px -691px;}
+.bg-coupon-info-black {background-position: -170px -691px;}
+  
+/* =================== MEDIA QUERY =================== */
+@media only screen and (max-width: 991px) {
+    .bg-icon, .bg-icon20 {background-size: 340px;width: 16px;min-width: 16px;height: 16px;}
+    .bg-icon13 {background-size: 260px;width: 13px;min-width: 13px;height: 13px;}
+    .bg-filter, .bg-icon32.bg-phone, .bg-favourite-disliked:not(.bg-icon20), .bg-favourite-liked:not(.bg-icon20),
+    .bg-icon32.bg-help, .bg-icon32.bg-load_more, .bg-icon32.bg-past,
+    .bg-icon32.bg-like, .bg-icon32.bg-heart-red, .bg-icon32.bg-clap,
+    .bg-email-brown, .bg-copyclipboard-brown {background-size: 500px;width: 24px;min-width: 24px;height: 24px;}
+    .bg-icon32 {background-size: 680px;width: 32px;min-width: 32px;height: 32px;}
+    .bg-icon40, .bg-icon100, .bg-icon64 {background-size: 840px;width: 40px;min-width: 40px;height: 40px;}
+    .bg-icon80,
+    .bg-icon64.bg-share-whatsapp,
+    .bg-icon64.bg-share-facebook,
+    .bg-icon64.bg-share-twitter,
+    .bg-icon64.bg-share-email,
+    .bg-icon100.bg-details,
+    .bg-icon100.bg-bill-rejected,
+    .bg-icon100.bg-upload-bill,
+    .bg-icon100.bg-bill-review,
+    .bg-icon100.bg-lock {background-size: 1360px;width: 64px;min-width: 64px;height: 64px;}
+    .bg-clap, .bg-icon20.bg-clap {background-position: -23px 0px;}
+    .bg-coin, .bg-icon20.bg-coin {background-position: -46px 0px;}
+    .bg-completed, .bg-icon20.bg-completed {background-position: -70px 0px;}
+    .bg-completed_task, .bg-icon20.bg-completed_task {background-position: -93px 0px;}
+    .bg-copyright {background-position: -115px 0px;}
+    .bg-email {background-position: -139px 0px;}
+    .bg-facebook {background-position: -162px 0px;}
+    .bg-featured {background-position: -185px 0px;}
+    .bg-floor, .bg-icon20.bg-floor {background-position: -208px 0px;}
+    .bg-gem {background-position: -231px 0px;}
+    .bg-heart, .bg-icon20.bg-heart {background-position: -254px 0px;}
+    .bg-info, .bg-icon20.bg-info {background-position: -277px 0px;}
+    .bg-instagram {background-position: -301px 0px;}
+    .bg-like, .bg-icon20.bg-like {background-position: -323px 0px;}
+    .bg-like_feed, .bg-icon20.bg-like_feed {background-position: 0px -23px;}
+    .bg-load_more, .bg-icon20.bg-load_more {background-position: -23px -23px;}
+    .bg-mall_feed_all {background-position: -70px -23px;}
+    .bg-phone {background-position: -116px -23px;}
+    .bg-share {background-position: -139px -23px;}
+    .bg-share_feed {background-position: -162px -23px;}
+    .bg-spin_wheel {background-position: -185px -23px;}
+    .bg-store_contact {background-position: -208px -23px;}
+    .bg-terms_conditions, .bg-icon20.bg-terms_conditions {background-position: -230px -23px;}
+    .bg-tier_badge {background-position: -255px -23px;}
+    .bg-twitter {background-position: -278px -23px;}
+    .bg-unlock {background-position: -301px -23px;}
+    .bg-upload_bills {background-position: -324px -23px;}
+    .bg-video_play {background-position: 0px -46px;}
+    .bg-wallet {background-position: -23px -46px;}
+    .bg-xp {background-position: -46px -46px;}
+    .bg-youtube {background-position: -70px -46px;}
+    .bg-book_parking {background-position: -93px -46px;}
+    .bg-book_visit {background-position: -116px -46px;}
+    .bg-earn_zone {background-position: -139px -46px;}
+    .bg-upload_bills_gold {background-position: -277px -115px;}
+    .bg-explore {background-position: -162px -46px;}
+    .bg-find_store {background-position: -185px -46px;}
+    .bg-hands_free {background-position: -208px -46px;}
+    .bg-login {background-position: -231px -46px;}
+    .bg-mall_feed {background-position: -254px -46px;}
+    .bg-rewards {background-position: -278px -46px;}
+    .bg-unlock_coupons {background-position: -301px -46px;}
+    .bg-unlock_rewards {background-position: -324px -46px;}
+    .bg-visit {background-position: 0px -70px;}
+    .bg-calendar, .bg-icon20.bg-calendar {background-position: -24px -69px;}
+    .bg-confetti, .bg-icon20.bg-confetti {background-position: -47px -69px;}
+    .bg-edit, .bg-icon20.bg-edit {background-position: -70px -69px;}
+    .bg-gender, .bg-icon20.bg-gender {background-position: -93px -69px;}
+    .bg-information, .bg-icon20.bg-information {background-position: -116px -69px;}
+    .bg-stroller, .bg-icon20.bg-stroller {background-position: -139px -69px;}
+    .bg-timer, .bg-icon20.bg-timer {background-position: -162px -69px;}
+    .bg-wheelchair, .bg-icon20.bg-wheelchair {background-position: -185px -69px;}
+    .bg-copyclipboard, .bg-icon20.bg-copyclipboard {background-position: -208px -69px;}
+    .bg-transfer {background-position: -231px -69px;}
+    .bg-coupon-redeemed {background-position: -278px -69px;}
+    .bg-success-tick {background-position: -301px -69px;}
+    .bg-help {background-position: -185px -93px;}
+    .bg-bill-rejected {background-position: -231px -93px;}
+    .bg-bought-gem {background-position: -254px -93px;}
+    .bg-phonebook {background-position: -323px -93px;}
+    .bg-expired {background-position: 0px -116px;}
+    .bg-task-done {background-position: -24px -116px;}
+    .bg-logout {background-position: -47px -116px;}
+    .bg-anniversary, .bg-icon20.bg-anniversary {background-position: -70px -116px;}
+    .bg-cake, .bg-icon20.bg-cake {background-position: -93px -116px;}
+    .bg-gender-black, .bg-icon20.bg-gender-black {background-position: -116px -116px;}
+    .bg-mail, .bg-icon20.bg-mail {background-position: -139px -116px;}
+    .bg-call, .bg-icon20.bg-call {background-position: -162px -116px;}
+    .bg-name, .bg-icon20.bg-name {background-position: -185px -116px;}
+    .bg-activities {background-position: -254px -116px;}
+    .bg-qrscan {background-position: -277px -116px;}
+    .bg-transaction-history {background-position: -301px -116px;}
+    .bg-parking-car, .bg-icon20.bg-parking-car {background-position: -324px -116px;}
+    .bg-lift {background-position: -93px -93px;}
+    .bg-booking {background-position: 0px -138px;}
+    .bg-coupon-history {background-position: -24px -138px;}
+    .bg-bill-review {background-position: -116px -138px;}
+    .bg-booking-success {background-position: -254px -139px;}
+    .bg-gps {background-position: -277px -138px;}
+    .bg-select-tag {background-position: -324px -139px;}
+    .bg-visit-white {background-position: 0px -162px;}
+    .bg-explore-white {background-position: -23px -162px;}
+    .bg-rewards-white {background-position: -46px -162px;}
+    .bg-search-white {background-position: -70px -162px;}
+    .bg-info-red {background-position: -231px -139px;}
+    .bg-login-white {background-position: -93px -162px;}
+    .bg-parking-red {background-position: -139px -162px;}
+    .bg-calendar-red {background-position: -162px -162px;}
+    .bg-right-arrow {background-position: -208px -162px;}
+    .bg-search {background-position: -277px -162px;}
+    .bg-camera {background-position: -301px -162px;}
+    .bg-coupons-yellow {background-position: -324px -162px;}
+    .bg-visit-red {background-position: 0px -185px;}
+    .bg-explore-red {background-position: -23px -185px;}
+    .bg-rewards-red {background-position: -46px -185px;}
+    .bg-event {background-position: -116px -185px;}
+    .bg-parking-blue {background-position: -139px -185px;}
+    .bg-expired-blue {background-position: -162px -185px;}
+    .bg-game {background-position: -185px -185px;}
+    .bg-level-up {background-position: -208px -185px;}
+    .bg-system-update {background-position: -231px -185px;}
+    .bg-home {background-position: -323px -208px;}
+    .bg-navfrom {background-position: -162px -255px;}
+    .bg-transfer-gold {background-position: -231px -278px;}
+    .bg-details-white {background-position: -46px -302px;}
+    .bg-upload-device {background-position: -69px -302px;}
+    .bg-information-white {background-position: -278px -302px;}
+    .bg-close, .bg-icon20.bg-close {background-position: -255px -232px;}
+    .bg-edit-brown {background-position: -185px -326px;}
+    .bg-book-table {background-position: -322px -327px;}
+    .bg-plus-white {background-position: -208px -327px;}
+    .bg-store-brown {background-position: -254px -327px;}
+    .bg-today {background-position: -278px -327px;}
+    .bg-tomorrow {background-position: -301px -327px;}
+    .bg-search-brown {background-position: -231px -326px;}
+    .bg-remove-grey {background-position: -162px -326px;}
+    .bg-gift {background-position: -185px -208px;}
+    .bg-store {background-position: -278px -93px;}
+    .bg-note {background-position: -116px -327px;}
+    .bg-remove-red {background-position: -138px -327px;}
+    .bg-wallet-brown {background-position: -46px -327px;}
+    .bg-past {background-position: -277px -350px;}
+    .bg-close-brown2 {background-position: -255px -278px;}
+    .bg-tick-brown {background-position: -301px -350px;}
+    .bg-activity-scan {background-position: 0px -373px;}
+    .bg-birthday-anniversary {background-position: -24px -373px;}
+    .bg-event-refund {background-position: -46px -373px;}
+    .bg-manual {background-position: -70px -373px;}
+    .bg-parking-refund {background-position: -93px -373px;}
+    .bg-referral {background-position: -116px -373px;}
+    .bg-shop-win {background-position: -139px -373px;}
+    .bg-tier-recurring {background-position: -162px -373px;}
+    .bg-tier {background-position: -185px -373px;}
+    .bg-scratchcard {background-position: -323px -303px;}
+    .bg-wheel {background-position: -185px -350px;}
+    .bg-dineout {background-position: -185px -280px;}
+    .bg-coupons {background-position: -301px -47px;}
+    .bg-contactless-payment {background-position: -324px -185px;}
+    .bg-home-grey {background-position: -162px -443px;}
+    .bg-store-info {background-position: -254px -443px;}
+    .bg-coupon-info {background-position: -278px -443px;}
+    .bg-catalogue-info {background-position: -300px -443px;}
+    .bg-feed-info {background-position: -321px -443px;}
+    .bg-store-info-white {background-position: -22px -470px;}
+    .bg-coupon-info-white {background-position: -46px -470px;}
+    .bg-catalogue-info-white {background-position: -70px -470px;}
+    .bg-feed-info-white {background-position: -92px -470px;}
+    .bg-coupon-info-black {background-position: -116px -470px;}
+    .bg-like-white, .bg-icon20.bg-like-white {background-position: -300px -373px;}
+    .bg-share-white, .bg-icon20.bg-share-white {background-position: 0px -395px;}
+    .bg-icon20.bg-favourite-liked {background-position: -92px -350px;}
+    .bg-icon20.bg-favourite-disliked {background-position: -115px -350px;}
+    .bg-icon20.bg-edit-brown {background-position: -185px -327px;}
+    .bg-icon100.bg-success-tick, .bg-icon64.bg-success-tick {background-position: -743px -171px;}
+    .bg-icon100.bg-details {background-position: -1196px -371px;}
+    .bg-icon100.bg-bill-rejected {background-position: -926px -371px;}
+    .bg-icon100.bg-bill-review {background-position: -463px -556px;}
+    .bg-icon100.bg-upload-bill {background-position: -94px -1210px;}
+    .bg-icon100.bg-lock {background-position: -925px -1398px;}
+    .bg-icon64.bg-booking-success {background-position: -629px -343px;}
+    .bg-icon80.bg-information {background-position: -463px -278px;}
+    .bg-icon80.bg-shield {background-position: -1110px -740px;}
+    .bg-icon80.bg-faq {background-position: -1018px -740px;}
+    .bg-icon80.bg-contact-msg {background-position: -1202px -740px;}
+    .bg-icon80.bg-about {background-position: -277px -833px;}
+    .bg-icon64.bg-rewards {background-position: -629px -747px;}
+    .bg-icon64.bg-calendar {background-position: -57px -172px;}
+    .bg-icon64.bg-unknown {background-position: -629px -863px;}
+    .bg-desktop {background-size: 500px;width: 24px;min-width: 24px;height: 24px;}
+    .bg-desktop.bg-twitter {background-position: -408px -34px;}
+    .bg-desktop.bg-youtube {background-position: -102px -68px;}
+    .bg-desktop.bg-facebook {background-position: -238px 0px;}
+    .bg-desktop.bg-instagram {background-position: -442px 0px;}
+    .bg-icon32.bg-coin {background-position: -93px 0px;}
+    .bg-icon32.bg-gem {background-position: -463px 0px;}
+    .bg-icon32.bg-phone {background-position: -170px -35px;}
+    .bg-icon32.bg-xp {background-position: -93px -93px;}
+    .bg-icon32.bg-parking-red {background-position: -278px -324px;}
+    .bg-icon32.bg-calendar-red {background-position: -324px -324px;}
+    .bg-icon32.bg-coupons-yellow {background-position: -647px -324px;}
+    .bg-icon32.bg-favourite-liked {background-position: -136px -514px;}
+    .bg-icon32.bg-favourite-disliked {background-position: -170px -514px;}
+    .bg-icon32.bg-load_more {background-position: -34px -34px;}
+    .bg-icon32.bg-help {background-position: -272px -136px;}
+    .bg-icon32.bg-past {background-position: -408px -514px;}
+    .bg-icon32.bg-clap {background-position: -34px 0px;}
+    .bg-icon32.bg-like {background-position: -476px 0px;}
+    .bg-icon32.bg-heart-red {background-position: -374px -548px;}
+}
+  
+/* =================== NEW MEDIA QUERY =================== */
+@media only screen and (max-width: 991px) {
+    .bg-icon120 {background-size: 2450px;width: 120px;min-width: 120px;height: 120px;}
+    .bg-icon100 {background-size: 2130px;width: 100px;min-width: 100px;height: 100px;}
+    .bg-icon80 {background-size: 1680px;width: 80px;min-width: 80px;height: 80px;}
+    .bg-icon64 {background-size: 1360px;width: 64px;min-width: 64px;height: 64px;}
+    .bg-icon40 {background-size: 840px;width: 40px;min-width: 40px;height: 40px;}
+    .bg-icon32 {background-size: 680px;width: 32px;min-width: 32px;height: 32px;}
+    .bg-icon24, .bg-icon3224, .bg-icon4024 {background-size: 500px;width: 24px;min-width: 24px;height: 24px;}
+    .bg-icon20, .bg-icon3220, .bg-icon2420 {background-size: 420px;width: 20px;min-width: 20px;height: 20px;}
+    .bg-icon16, .bg-icon2816, .bg-icon2416, .bg-icon2016 {background-size: 340px;width: 16px;min-width: 16px;height: 16px;}
+    .bg-icon13, .bg-icon1613 {background-size: 260px;width: 13px;min-width: 13px;height: 13px;}
+  
+    .bg-icon80.bg-gift-coupon {background-position: -914px -1955px;}
+  
+    .bg-icon3224.bg-gem {background-position: -340px 0px;}
+    .bg-icon3224.bg-coin {background-position: -68px 0px;}
+    .bg-icon3224.bg-info {background-position: -408px 0px;}
+    .bg-icon3224.bg-xp {background-position: -68px -68px;}
+    .bg-icon3224.bg-help {background-position: -272px -136px;}
+    .bg-icon3224.bg-details {background-position: -442px -136px;}
+    .bg-icon3224.bg-support {background-position: -204px -204px;}
+    .bg-icon3224.bg-privacy-policy {background-position: -238px -204px;}
+    .bg-icon3224.bg-coupons-yellow {background-position: -475px -238px;}
+    .bg-icon3224.bg-gift {background-position: -271px -308px;}
+    .bg-icon3224.bg-remove-red {background-position: -204px -480px;}
+    .bg-icon3224.bg-tutorial {background-position: -340px -651px;}
+  
+    .bg-icon4024.bg-unlock-purple {background-position: -374px -102px;}
+    .bg-icon4024.bg-help {background-position: -272px -136px;}
+    .bg-icon4024.bg-store {background-position: -408px -136px;}
+    .bg-icon4024.bg-activities {background-position: -374px -170px;}
+    .bg-icon4024.bg-qrscan {background-position: -408px -170px;}
+    .bg-icon4024.bg-transaction-history {background-position: -442px -170px;}
+    .bg-icon4024.bg-parking-car {background-position: -476px -170px;}
+    .bg-icon4024.bg-booking {background-position: 0px -204px;}
+    .bg-icon4024.bg-scratchcard {background-position: -475px -445px;}
+    .bg-icon4024.bg-wheel {background-position: -272px -514px;}
+
+    .bg-icon40.bg-navigate {background-position: 0px -1161px;}
+    
+    .bg-icon24.bg-coin {background-position: -68px 0px;}
+    .bg-icon24.bg-info {background-position: -408px 0px;}
+    .bg-icon24.bg-lift {background-position: -136px -136px;}
+    .bg-icon24.bg-logout {background-position: -68px -170px;}
+    .bg-icon24.bg-login-white {background-position: -136px -238px;}
+    .bg-icon24.bg-coupons-yellow {background-position: -476px -238px;}
+    .bg-icon24.bg-gift {background-position: -272px -306px;}
+    .bg-icon24.bg-menu {background-position: -272px -341px;}
+    .bg-icon24.bg-close-brown2 {background-position: -375px -410px;}
+    .bg-icon24.bg-white-tick {background-position: -136px -616px;}
+    .bg-icon24.bg-navigate {background-position: 0px -691px;}
+  
+    .bg-icon2420.bg-coin, .bg-icon3220.bg-coin {background-position: -57px 0px;}
+    .bg-icon2420.bg-gem, .bg-icon3220.bg-gem {background-position: -285px 0px;}
+    .bg-icon2420.bg-info {background-position: -343px 0px;}
+    .bg-icon2420.bg-terms_conditions {background-position: -286px -29px;}
+    .bg-icon2420.bg-timer {background-position: -200px -86px;}
+    .bg-icon3220.bg-coupons-yellow {background-position: -400px -200px;}
+    .bg-icon3220.bg-gift {background-position: -228px -257px;}
+    .bg-icon3220.bg-xp {background-position: -57px -56px;}
+    .bg-icon2420.bg-timer-grey {background-position: -171px -488px;}
+    .bg-icon2420.bg-clock-grey {background-position: -285px -518px;}
+    .bg-icon2420.bg-rightline-white-arrow {background-position: -343px -518px;}
+
+    .bg-icon20.bg-coin {background-position: -57px 0px;}
+    .bg-icon20.bg-white-tick {background-position: -114px -518px;}
+  
+    .bg-icon2016.bg-coin {background-position: -46px 0px;}
+    .bg-icon2016.bg-gem {background-position: -231px 0px;}
+    .bg-icon2016.bg-unlock_coupons {background-position: -301px -46px;}
+    .bg-icon2016.bg-unlock_rewards {background-position: -323px -46px;}
+    .bg-icon2016.bg-left-arrow {background-position: -23px -279px;}
+    .bg-icon2016.bg-brown-arrow {background-position: -207px -279px;}
+    .bg-icon2416.bg-close-brown2 {background-position: -254px -278px;}
+    .bg-icon2016.bg-tick {background-position: -277px -279px;}
+    .bg-icon2016.bg-expiring-alert {background-position: -208px -396px;}
+    .bg-icon2016.bg-gift-black {background-position: -231px -396px;}
+    .bg-icon2016.bg-right-brown-arrow {background-position: -276px -396px;}
+    .bg-icon2016.bg-rightline-black-arrow {background-position: 0px -420px;}
+    .bg-icon2016.bg-leftline-brown-arrow {background-position: -23px -420px;}
+    .bg-icon2016.bg-white-tick {background-position: -93px -420px;}
+    .bg-icon2016.bg-filled-tick {background-position: -116px -420px;}
+    .bg-icon2016.bg-celebration {background-position: -139px -420px;}
+    .bg-icon2016.bg-star-struck {background-position: -162px -420px;}
+    .bg-icon2416.bg-clock-grey, .bg-icon2816.bg-clock-grey {background-position: -231px -420px;}
+    .bg-icon2016.bg-refresh {background-position: -254px -420px;}
+    .bg-icon2016.bg-rightline-white-arrow {background-position: -277px -420px;}
+    
+    .bg-icon16.bg-close-white {background-position: -162px -303px;}
+  
+    .bg-icon1613.bg-phone-brown {background-position: -88px -302px;}
+    .bg-icon1613.bg-right-brown-arrow {background-position: -211px -302px;}
+    .bg-icon1613.bg-down-grey-arrow {background-position: -229px -302px;}
+    .bg-icon1613.bg-eye-brown {background-position: -245px -302px;}
+    .bg-icon1613.bg-white-tick {background-position: -70px -321px;}
+    .bg-icon1613.bg-filled-tick {background-position: -88px -321px;}
+    .bg-icon1613.bg-brown-arrow {background-position: -158px -212px;}
+    .bg-icon1613.bg-rightline-white-arrow {background-position: -212px -321px;}
+
+    .bg-icon13.bg-close-white {background-position: -124px -231px;}
+}
