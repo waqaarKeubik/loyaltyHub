@@ -1,0 +1,298 @@
+.wheel-wrapper {
+  margin-top: 100px;
+  max-width: 452px;
+  height: 452px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 60px;
+  /* background-color: red; */
+}
+
+.wheel-wrapper .wheel-pointer {
+  width: 60px;
+  height: 92px;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  background-image: url(https://d1xz17h748l1av.cloudfront.net/assets/images/gold-theme/spin-wheel/wheel-pin.svg);
+  background-image: url(https://d1xz17h748l1av.cloudfront.net/assets/images/gold-theme/spin-wheel/wheel-pin.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.wheel-stand {
+  width: 400px;
+  height: 94px;
+  background-image: url(https://d1xz17h748l1av.cloudfront.net/assets/images/gold-theme/spin-wheel/wheel-stand-blank.svg);
+  background-image: url(https://d1xz17h748l1av.cloudfront.net/assets/images/gold-theme/spin-wheel/wheel-stand-blank.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.wheel-inner-circle {
+  width: 214px;
+  height: 214px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(https://d1xz17h748l1av.cloudfront.net/assets/images/gold-theme/spin-wheel/wheel-inner-circle.svg);
+  background-image: url(https://d1xz17h748l1av.cloudfront.net/assets/images/gold-theme/spin-wheel/wheel-inner-circle.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  justify-content: center;
+  z-index: 10;
+}
+
+.wheel-inner-circle > .text {
+  color: #ecd175;
+  color: #ecd175;
+  text-align: center;
+  padding: 0 40px;
+  word-break: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.cfs-bulb,
+.stand-bulb,
+.wheel-bulb {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #fdfdf9;
+  background-color: #fdfdf9;
+  box-shadow: 0px 0px 5px 1.5px #d0a71c;
+  box-shadow: 0px 0px 5px 1.5px var(#d0a71c, 0.3);
+}
+
+.stand-bulb:nth-of-type(1) {
+  bottom: 10px;
+  left: 9%;
+}
+
+.stand-bulb:nth-of-type(2) {
+  bottom: 10px;
+  left: 22%;
+}
+
+.stand-bulb:nth-of-type(2) {
+  bottom: 10px;
+  left: 22%;
+}
+
+.stand-bulb:nth-of-type(3) {
+  bottom: 10px;
+  left: 35%;
+}
+
+.stand-bulb:nth-of-type(4) {
+  bottom: 10px;
+  left: 48%;
+}
+
+.stand-bulb:nth-of-type(5) {
+  bottom: 10px;
+  left: 61%;
+}
+
+.stand-bulb:nth-of-type(6) {
+  bottom: 10px;
+  left: 74%;
+}
+
+.stand-bulb:nth-of-type(7) {
+  bottom: 10px;
+  left: 87%;
+}
+
+.wheel-bg {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+  background-image: url(https://d1xz17h748l1av.cloudfront.net/assets/images/gold-theme/spin-wheel/wheel-bg-blank.svg);
+  background-image: url(https://d1xz17h748l1av.cloudfront.net/assets/images/gold-theme/spin-wheel/wheel-bg-blank.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 10px;
+}
+
+.wheel-bulb:nth-of-type(1) {
+  left: 16%;
+  top: 69px;
+}
+
+.wheel-bulb:nth-of-type(2) {
+  left: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.wheel-bulb:nth-of-type(3) {
+  bottom: 75px;
+  left: 16%;
+}
+
+.wheel-bulb:nth-of-type(4) {
+  bottom: 2.5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.wheel-bulb:nth-of-type(5) {
+  bottom: 75px;
+  right: 16%;
+}
+
+.wheel-bulb:nth-of-type(6) {
+  right: 2%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.wheel-bulb:nth-of-type(7) {
+  right: 16%;
+  top: 69px;
+}
+
+.prize-list {
+  width: 90%;
+  height: 90%;
+  text-align: center;
+  position: absolute;
+  border: 1px solid #e3ba30;
+  border-radius: 50%;
+  top: 4.5%;
+  left: 5%;
+  transition: transform 4s ease-in-out;
+  overflow: hidden;
+}
+
+.prize-item-wrapper {
+  overflow: hidden;
+  position: absolute;
+  transform-origin: 0% 100%;
+  background-color: #fcfbf5;
+}
+
+.more {
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 50%;
+}
+
+.less {
+  top: -20%;
+  right: -20%;
+  width: 70%;
+  height: 70%;
+}
+
+.prize-item {
+  flex-direction: column;
+  padding: 10px;
+}
+
+.prize-item {
+  position: absolute;
+  left: -100%;
+  width: 200%;
+  height: 200%;
+  text-align: center;
+  transform: skewY(60deg) rotate(15deg);
+}
+
+.prize-item .retailer-logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: 1px solid #ecd175;
+  justify-content: center;
+}
+
+.wheel-list-page-wrapper .wheels-listing-heading {
+  font-family: "DINOT-Bold";
+  margin: 16px 0 48px;
+  color: #371f0b;
+  font-size: 2rem;
+  line-height: 28px;
+}
+.wheel-list-page-wrapper .wheel-list-wrapper {
+  border: 1px solid #ecd175;
+  border-radius: 8px;
+  width: 100%;
+  margin-top: 22px;
+}
+.wheel-list-page-wrapper .wheel-list-wrapper .wd-top {
+  padding: 20px;
+  border-bottom: 1px solid #ecd175;
+  position: relative;
+}
+.wheel-list-page-wrapper .wheel-list-wrapper .wd-top .wheel-name {
+  font-family: "CastleTBold";
+  color: #693c14;
+  margin-bottom: 12px;
+  max-width: 296px;
+  font-size: 3.2rem;
+  line-height: 39px;
+}
+.wheel-list-page-wrapper .wheel-list-wrapper .wd-top img {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  width: 114px;
+}
+.wheel-list-page-wrapper .wheel-list-wrapper .wd-bottom {
+  padding: 12px;
+  background: #f5f2e3;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  color: #2b2b2b;
+  font-family: "DINOT-Bold";
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  line-height: 20px;
+}
+.wheel-list-page-wrapper .wheel-list-wrapper .wd-bottom .wd-bottom-text {
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+}
+
+/* =================== MEDIA QUERY =================== */
+@media only screen and (max-width: 767px) {
+  .wheel-list-page-wrapper .wheels-listing-heading {
+    margin-bottom: 30px;
+    font-size: 1.2rem;
+    line-height: 14px;
+  }
+  .wheel-list-page-wrapper .wheel-list-wrapper .wd-top .wheel-name {
+    margin-bottom: 8px;
+    max-width: 192px;
+    font-size: 2rem;
+    line-height: 24px;
+  }
+  .wheel-list-page-wrapper .wheel-list-wrapper .wd-top img {
+    width: 100px;
+    right: 16px;
+  }
+  .wheel-list-page-wrapper .wheel-list-wrapper .wd-bottom {
+    font-size: 1.2rem;
+    line-height: 14px;
+  }
+}

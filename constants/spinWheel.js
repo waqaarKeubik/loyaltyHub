@@ -1,0 +1,75 @@
+const data = {
+  status: {
+    code: 200,
+    message: "success",
+  },
+  data: {
+    spinWheels: {
+      id: "e[XzPXQHY_azhTBpixPkSw$$",
+      name: "Spinnerjsbsb",
+      description: "<p>hgjyh</p>",
+      backgroundImage: 5,
+      termsAndConditions: "<p>hfvgjbh</p>",
+      totalAttempts: 6,
+      targeting: 2,
+      spinPerDay: 6,
+      totalSpins: 60,
+      totalUsed: 7,
+      unlockType: 2,
+      spinStatus: 2,
+      categorization: 1,
+      transId: null,
+      perDay: 0,
+      attempts: 0,
+      canAttempt: 1,
+      pendingAttempts: 6,
+      unlockValue: 1,
+      benefitsData: [
+        {
+          benefitId: 587,
+          benefitType: 1,
+          couponId: 173,
+          couponName: "Spinnercoupo  Cloned",
+          displayName: "Spinnercoupo  Cloned",
+          name: "nike",
+          logo: "https://d3honpllbqpyr6.cloudfront.net/retailerDetails/2022/5/6/37483200439-1-2022-5-6.png",
+          retailerId: 13,
+        },
+        {
+          benefitId: 588,
+          benefitType: 2,
+          rewardId: 109,
+          rewardName: "Spinrewarding Cloned",
+          displayName: "Spinrewarding Cloned",
+          name: "nike",
+          logo: "https://d3honpllbqpyr6.cloudfront.net/retailerDetails/2022/5/6/37483200439-1-2022-5-6.png",
+          retailerId: 13,
+        },
+        {
+          benefitId: 589,
+          benefitType: 3,
+          value: 10,
+        },
+        {
+          benefitId: 590,
+          benefitType: 4,
+          value: 10,
+        },
+        {
+          benefitId: 591,
+          benefitType: 6,
+          value: "Message",
+        },
+        {
+          benefitId: 592,
+          benefitType: 5,
+          value: 10,
+        },
+      ],
+    },
+    totalPoints: "0.00",
+    gems: "0.00",
+  },
+};
+
+module.exports = data;

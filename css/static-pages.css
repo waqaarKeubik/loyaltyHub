@@ -16,3 +16,60 @@
 .banner-container.loyalty-banner .heading2-text {
     color: #693c14;
 }
+
+/* Common Section */
+section.common-section {
+    padding-top: 48px;
+}
+.arrow-btn-container {
+    font-size: 1.6rem;
+    line-height: 19px;
+    font-family: 'DINOT-Bold';
+    display: flex;
+    align-items: center;
+    word-break: break-word;
+}
+.previous-arrow-btn, .next-arrow-btn {
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    border: 1px solid #ecd175;
+    border-radius: 50%;
+    background-color: #FDFDF9;
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+.arrow-btn-container .previous-arrow-btn {
+    margin-right: 16px;
+}
+.arrow-btn-container .next-arrow-btn {
+    margin-left: 16px;
+}
+.previous-arrow-btn:before, .next-arrow-btn:before {
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    transform-origin: 50% 50%;
+    box-shadow: inset -1.8px 1.8px 0 0 #1b1005;
+}
+.previous-arrow-btn:before {
+    left: 13px;
+    transform: translate(0, -5px) rotate(-135deg);
+}
+.previous-arrow-btn:after, .next-arrow-btn:after {
+    top: 50%;
+    left: 13px;
+    width: 13px;
+    height: 2px;
+    transform: translate(0, -50%);
+    background-color: #1b1005;
+}
+
+/* =================== MEDIA QUERY =================== */
+@media only screen and (max-width: 767px) {
+    section.common-section {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+}
