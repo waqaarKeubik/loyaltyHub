@@ -1,9 +1,18 @@
+const http = require("./http");
+
 class SpinWheel {
-  constructor() {
+  constructor(obj) {
+    this.wheelId = obj.wheelId;
+    this.colorIndex = ["green", "blue", "purple", "yellow", "orange"];
     this.prizes = [];
   }
 
-  init(id) {
+  async init(id) {
+    let { spinWheels } = await this.spinWheelDetails(this.wheelId);
+    this.renderDetails(id, spinWheels);
+  }
+
+  renderDetails(id, spinWheels) {
     let parentContainer = document.getElementById(id);
     let containerEl = document.createElement("div");
     containerEl.setAttribute("class", "wheel-wrapper");
@@ -15,56 +24,16 @@ class SpinWheel {
     parentContainer.appendChild(containerEl);
     this.renderActions(parentContainer);
 
-    this.prizes = [
-      {
-        rotate: 0,
-        backgroundColor: "green",
-      },
-      {
-        rotate: 72,
-        backgroundColor: "red",
-      },
-      {
-        rotate: 144,
-        backgroundColor: "yellow",
-      },
-      {
-        rotate: 216,
-        backgroundColor: "blue",
-      },
-      {
-        rotate: 288,
-        backgroundColor: "orange",
-      },
-      {
-        rotate: 288,
-        backgroundColor: "blue",
-      },
-      {
-        rotate: 288,
-        backgroundColor: "red",
-      },
-      // {
-      //   rotate: 288,
-      //   backgroundColor: "fuchsia",
-      // },
-      // {
-      //   rotate: 288,
-      //   backgroundColor: "navy",
-      // },
-      // {
-      //   rotate: 288,
-      //   backgroundColor: "teal",
-      // },
-      // {
-      //   rotate: 288,
-      //   backgroundColor: "teal",
-      // },
-      // {
-      //   rotate: 288,
-      //   backgroundColor: "greenyellow",
-      // },
-    ];
+    this.prizes = spinWheels.benefitsData;
+  }
+
+  async spinWheelDetails(id) {
+    try {
+      let result = await http.getSpinTheWheelDetails(id);
+      return result;
+    } catch (error) {
+      console.log(error);
+    }
   }
 
   renderPointer(el) {
@@ -87,7 +56,7 @@ class SpinWheel {
   }
 
   renderCenterCircle(el) {
-    let html = `<div class="wheel-inner-circle">
+    let html = `<div class="wheel-inner-circle" id="wheel-inner-circle">
       <h3 class="text">coupons and rewards</h3>
    </div>`;
     el.insertAdjacentHTML("beforeend", html);
@@ -103,6 +72,10 @@ class SpinWheel {
     <div class="wheel-bulb"></div>
     <div class="wheel-bulb"></div>
     <div class="prize-list" id="prize-list">
+    </div>
+    <div class="final-result-wrapper" id="final-result-wrapper" style="display: none;">
+      <div class="final-status" id="final-status">
+      </div>
     </div>
    </div>`;
     el.insertAdjacentHTML("beforeend", html);
@@ -133,7 +106,7 @@ class SpinWheel {
         "deg ) skewY(" +
         config.parentSliceSkewY +
         "deg)";
-      prizeItemWrapper.style.backgroundColor = item.backgroundColor;
+      prizeItemWrapper.style.backgroundColor = this.colorIndex[i];
 
       // // child
       let prizeChild = document.createElement("div");
@@ -147,9 +120,37 @@ class SpinWheel {
         "deg) translateY(" +
         translateY +
         "px)";
-      prizeChild.innerHTML = `<div><h3>${
-        i + 1
-      }</h3><br><img height="20" width="20" src="https://d3honpllbqpyr6.cloudfront.net/retailerDetails/2022/5/6/37483200439-1-2022-5-6.png" alt="logo"></div>`;
+
+      let htmlString = "";
+      htmlString += "<div>";
+      htmlString += "<div>";
+      if (item.benefitType === 1) {
+        htmlString +=
+          "<img height='30' width='30' src='https://web-assets.phoenixnhance.com/assets/images/gold-theme/home/coupons.svg' />";
+      } else if (item.benefitType === 2) {
+        htmlString +=
+          "<img height='30' width='30' src='https://web-assets.phoenixnhance.com/assets/images/gold-theme/home/rewards.svg' />";
+      } else if (item.benefitType === 3) {
+        htmlString +=
+          "<img height='30' width='30' src='https://static.vecteezy.com/system/resources/previews/006/871/898/non_2x/cardano-crypto-flat-icon-free-vector.jpg' />";
+      } else if (item.benefitType === 4) {
+        htmlString +=
+          "<img height='30' width='30' src='https://cdn-icons-png.flaticon.com/512/539/539043.png' />";
+      } else if (item.benefitType === 6) {
+        htmlString +=
+          "<img height='40' width='40' style='margin-bottom: -10px;' src='https://assets-global.website-files.com/5ecc205eb8d8da8c91a5e7cb/5f10daa267d7ca57ec3768eb_Group%20171.png' />";
+      }
+      htmlString += "</div>";
+      htmlString += "<div class='benefit'>";
+      if (item.benefitType === 3 || item.benefitType === 4) {
+        htmlString += `<span class="value">${item.value}</span>`;
+      } else if (item.benefitType === 1 || item.benefitType === 2) {
+        htmlString += `<img height="20" width="20" src=${item.logo} alt="logo">`;
+      }
+      htmlString += "</div>";
+      htmlString += "</div>";
+
+      prizeChild.innerHTML = htmlString;
       prizeItemWrapper.append(prizeChild);
 
       el.appendChild(prizeItemWrapper);
@@ -163,18 +164,74 @@ class SpinWheel {
     el.appendChild(buttonEl);
 
     buttonEl.addEventListener("click", (e) => {
-      this.calcualtePrize(el);
+      this.spinNow(buttonEl);
     });
   }
 
-  calcualtePrize() {
-    let winningIndex = 4;
+  async spinNow(buttonEl) {
+    try {
+      let obj = {
+        spinWheelId: this.wheelId,
+      };
+      let result = await http.spinNow(obj);
+      buttonEl.disabled = true;
+      let indexIs = this.prizes.findIndex((p) => {
+        return p.benefitId === result.benefitId;
+      });
+      this.calcualtePrize(indexIs + 1, result);
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
+  calcualtePrize(winningIndex, result) {
     let rotatingAngle = (360 / this.prizes.length) * winningIndex;
     let getRandomNumber = this.getRandomArbitrary(1, 360 / this.prizes.length);
     let degreeToRotate = 360 * 4 + (360 - (rotatingAngle - getRandomNumber));
 
     let el = document.getElementById("prize-list");
     el.style.transform = "rotate(" + degreeToRotate + "deg)";
+    setTimeout(() => {
+      this.removeWheelAndShowPrize(result);
+    }, 4500);
+  }
+
+  removeWheelAndShowPrize(prize) {
+    let el1 = document.getElementById("wheel-inner-circle");
+    let el2 = document.getElementById("prize-list");
+    let el3 = document.getElementById("final-result-wrapper")
+    el1.style.display = "none";
+    el2.style.display = "none";
+    el3.style.display = "block";
+
+    this.showPrize(prize)
+  }
+
+  showPrize (prize) {
+    let el = document.getElementById('final-status');
+
+    let htmlString = '';
+    if (prize.benefitType === 1) {
+      htmlString += `<div class='icon'><img src=${prize.benefit.logo} /></div>`;
+      htmlString += `<div class='value'>You won a Reward from ${prize.benefit.retailerName}</div>`;
+    } else if (prize.benefitType === 2) {
+      htmlString += `<div class='icon'><img src=${prize.benefit.logo} /></div>`;
+      htmlString += `<div class='value'>You won a Reward from ${prize.benefit.retailerName}</div>`;
+    }  else if (prize.benefitType === 3) {
+      htmlString += `<div class='icon'><img src="https://static.vecteezy.com/system/resources/previews/006/871/898/non_2x/cardano-crypto-flat-icon-free-vector.jpg" /></div>`;
+      htmlString += `<div class='value'>${prize.amount}</div>`;
+    } else if (prize.benefitType === 4) {
+      htmlString += `<div class='icon'><img src="https://cdn-icons-png.flaticon.com/512/539/539043.png" /></div>`;
+      htmlString += `<div class='value'>${prize.amount}</div>`;
+    } else {
+      htmlString += `<div class='icon'><img src="https://assets.website-files.com/62253ac894f6a17c1728df15/62259b1a79a5082a898cf074_kingemail.svg" /></div>`;
+      htmlString += `<div class='value'>${prize.messageText}</div>`;
+    }
+    // console.log(htmlString)
+    el.innerHTML = htmlString;
+    console.log(el)
+    console.log(htmlString)
+    el.appendChild(htmlString)
   }
 
   getRandomArbitrary(min, max) {
@@ -206,8 +263,8 @@ class SpinWheel {
   }
 }
 
-function spinWheelRenderer(id) {
-  let spinWheel = new SpinWheel();
+function spinWheelRenderer(id, obj) {
+  let spinWheel = new SpinWheel(obj);
   spinWheel.init(id);
 }
 

@@ -1,22 +1,24 @@
+const loyaltyHub = require("./spin-wheel-listing");
 class LoyaltyHub {
-    constructor(containerId) {
-      this.containerEl = document.getElementById(containerId);
-    }
-  
-    renderer() {
-      this.renderParent();
-    }
-  
-    renderParent() {
-      let parentEl = document.createElement("section");
-      parentEl.setAttribute("class", "common-section main-section");
-      this.renderBanner(parentEl);
-      this.renderLoyaltyWrapper(parentEl);
-      this.containerEl.appendChild(parentEl);
-    }
-  
-    renderBanner(el) {
-      let bannerHtml = `<div class="banner-container loyalty-banner">
+  constructor(containerId) {
+    this.containerEl = document.getElementById(containerId);
+  }
+
+  renderer() {
+    this.renderParent();
+  }
+
+  renderParent() {
+    let parentEl = document.createElement("section");
+    parentEl.setAttribute("class", "common-section main-section");
+    parentEl.setAttribute("id", "landing-page-main");
+    this.renderBanner(parentEl);
+    this.renderLoyaltyWrapper(parentEl);
+    this.containerEl.appendChild(parentEl);
+  }
+
+  renderBanner(el) {
+    let bannerHtml = `<div class="banner-container loyalty-banner">
                             <div class="container-fluid">
                                 <div class="row">
                                     <div class="col-12">
@@ -25,24 +27,24 @@ class LoyaltyHub {
                                 </div>
                             </div>
                         </div>`;
-      el.insertAdjacentHTML("beforeend", bannerHtml);
-    }
-  
-    renderLoyaltyWrapper(el) {
-      let loyaltyWrapperHtml = `<div class="container-fluid loyalty-wrapper">
+    el.insertAdjacentHTML("beforeend", bannerHtml);
+  }
+
+  renderLoyaltyWrapper(el) {
+    let loyaltyWrapperHtml = `<div class="container-fluid loyalty-wrapper">
                                     <div class="row">
                                         <div class="col-12" id="main-column">
                                         </div>
                                     </div>
                                   </div>`;
-      el.insertAdjacentHTML("beforeend", loyaltyWrapperHtml);
-      setTimeout(() => {
-        this.renderCards();
-      });
-    }
-  
-    renderCards() {
-      let html = `<div class="row">
+    el.insertAdjacentHTML("beforeend", loyaltyWrapperHtml);
+    setTimeout(() => {
+      this.renderCards();
+    });
+  }
+
+  renderCards() {
+    let html = `<div class="row">
                         <div class="col-12" id="mob-container">
                             <div class="offer-tasks" id="offer-tasks">
                                 <div class="pointbox-wrapper" id="pointbox-wrapper">
@@ -50,7 +52,7 @@ class LoyaltyHub {
                             </div>
                         </div>
                     </div>`;
-      let html1 = `<div class="row mobhide">
+    let html1 = `<div class="row mobhide">
                     <div class="col-12">
                         <div class="invite-friends-wrapper">
                             <div class="invite-details">
@@ -69,32 +71,32 @@ class LoyaltyHub {
                         </div>
                     </div>
                 </div>`;
-      let mainEl = document.getElementById("main-column");
-      mainEl.insertAdjacentHTML("beforeend", html);
-      mainEl.insertAdjacentHTML("beforeend", html1);
-      setTimeout(() => {
-        this.getPointboxWrapper();
-      });
-    }
-  
-    getPointboxWrapper() {
-      let el = document.getElementById("pointbox-wrapper");
-      let el1 = document.getElementById("offer-tasks");
-      let mobContainerEl = document.getElementById("mob-container");
-      this.renderPointbox(el);
-      this.renderTierbox(el);
-      this.renderShopAndWin(el1);
-      this.renderSpinTheWheel(el1);
-      this.renderGiftFromUs(el1);
-      this.renderSurvey(el1);
-      this.renderUploadBillDesktop(el1);
-      this.renderGiftCardMobile(mobContainerEl);
-      this.renderInviteFriends(mobContainerEl);
-      this.renderUploadBillMobile(mobContainerEl);
-    }
-  
-    renderPointbox(el) {
-      let html = `<div class="pointbox">
+    let mainEl = document.getElementById("main-column");
+    mainEl.insertAdjacentHTML("beforeend", html);
+    mainEl.insertAdjacentHTML("beforeend", html1);
+    setTimeout(() => {
+      this.getPointboxWrapper();
+    });
+  }
+
+  getPointboxWrapper() {
+    let el = document.getElementById("pointbox-wrapper");
+    let el1 = document.getElementById("offer-tasks");
+    let mobContainerEl = document.getElementById("mob-container");
+    this.renderPointbox(el);
+    this.renderTierbox(el);
+    this.renderShopAndWin(el1);
+    this.renderSpinTheWheel(el1);
+    this.renderGiftFromUs(el1);
+    this.renderSurvey(el1);
+    this.renderUploadBillDesktop(el1);
+    this.renderGiftCardMobile(mobContainerEl);
+    this.renderInviteFriends(mobContainerEl);
+    this.renderUploadBillMobile(mobContainerEl);
+  }
+
+  renderPointbox(el) {
+    let html = `<div class="pointbox">
                         <a href="javascript:void(0)" class="points-item">
                             <div class="points"><span>Phoenix Points</span>
                                 <h3 class="number"><i class="bg-icon bg-coin icon-rightspace"></i> 1</h3>
@@ -106,11 +108,11 @@ class LoyaltyHub {
                             </div>
                         </a>
                     </div>`;
-      el.insertAdjacentHTML("beforeend", html);
-    }
-  
-    renderTierbox(el) {
-      let html = `<a href="javascript:void(0)" class="tierbox">
+    el.insertAdjacentHTML("beforeend", html);
+  }
+
+  renderTierbox(el) {
+    let html = `<a href="javascript:void(0)" class="tierbox">
                         <i class="bg-icon bg-icon13 bg-help desktophide tabhide"></i>
                         <div class="tier-badge">
                             <div class="badge-image">
@@ -139,11 +141,11 @@ class LoyaltyHub {
                             </div>
                         </div>
                     </a>`;
-      el.insertAdjacentHTML("beforeend", html);
-    }
-  
-    renderShopAndWin(el) {
-      let html = `<div class="shopwin-container">
+    el.insertAdjacentHTML("beforeend", html);
+  }
+
+  renderShopAndWin(el) {
+    let html = `<div class="shopwin-container">
                         <div class="shopwin-banner desktophide tabhide">
                             <img src="images/loyaltyhub/shopwin/sw-gift-mobile1.png" alt="" class="swb1">
                             <img src="images/loyaltyhub/shopwin/sw-gift-mobile2.png" alt="" class="swb2">
@@ -181,26 +183,26 @@ class LoyaltyHub {
                             <a href="javascript:void(0)" class="swf-color-btn">VIEW CAMPAIGNS</a>
                         </div>
                     </div>`;
-      el.insertAdjacentHTML("beforeend", html);
-    }
-  
-    renderSpinTheWheel(el) {
-      let html = `<div class="ot-box spinwheel-main">
+    el.insertAdjacentHTML("beforeend", html);
+  }
+
+  renderSpinTheWheel(el) {
+    let html = `<div class="ot-box spinwheel-main">
                         <div class="swm-logo">
                             <img src="images/loyaltyhub/spinwheel/spin-the-wheel.svg" alt="Spin The Wheel"></div>
                         <div class="swm-detail otb-detail">
                             <h3 class="swmd2">Spin the wheel</h3>
                             <div class="swmd3 spin-desc">Try your luck to win points, gems,<br class="mobhide"> coupons &amp; rewards</div>
                         </div>
-                        <a href="javascript:void(0)" class="swm-btn otb-btn">
+                        <a id="spin-the-wheel-btn" class="swm-btn otb-btn">
                             Try your luck now
                         </a>
                     </div>`;
-      el.insertAdjacentHTML("beforeend", html);
-    }
-  
-    renderGiftFromUs(el) {
-      let html = `<div class="ot-box scratchcard-main">
+    el.insertAdjacentHTML("beforeend", html);
+  }
+
+  renderGiftFromUs(el) {
+    let html = `<div class="ot-box scratchcard-main">
                             <div class="scm-logo">
                                 <img src="/images/loyaltyhub/gift-box.svg" alt="Gift Card">
                             </div>
@@ -210,11 +212,11 @@ class LoyaltyHub {
                             </div>
                             <a href="javascript:void(0)" class="scm-btn otb-btn">GET YOUR GIFT</a>
                         </div>`;
-      el.insertAdjacentHTML("beforeend", html);
-    }
-  
-    renderSurvey(el) {
-      let html = `<div class="ot-box scratchcard-main survey-main no-margin-top">
+    el.insertAdjacentHTML("beforeend", html);
+  }
+
+  renderSurvey(el) {
+    let html = `<div class="ot-box scratchcard-main survey-main no-margin-top">
                             <div class="scm-logo">
                                 <img src="images/loyaltyhub/survey/survey.svg" alt="Survey" class="mobhide">
                                 <img src="images/loyaltyhub/survey/survey-mobile.svg" alt="Survey" class="desktophide tabhide">
@@ -228,11 +230,11 @@ class LoyaltyHub {
                                 <span class="desktophide tabhide">Take a Survey</span>
                             </a>
                         </div>`;
-      el.insertAdjacentHTML("beforeend", html);
-    }
-  
-    renderUploadBillDesktop(el) {
-      let html = `<div class="ot-box uploadbill-main mobhide">
+    el.insertAdjacentHTML("beforeend", html);
+  }
+
+  renderUploadBillDesktop(el) {
+    let html = `<div class="ot-box uploadbill-main mobhide">
                         <div class="ubm-logo">
                             <img src="https://web-assets.phoenixnhance.com/assets/images/gold-theme/loyalty-hub/upload-bill.png" alt="Upload Bill">
                         </div>
@@ -250,11 +252,11 @@ class LoyaltyHub {
                             <span class="btn-title">Upload Your Bills</span>
                         </a>
                     </div>`;
-      el.insertAdjacentHTML("beforeend", html);
-    }
-  
-    renderGiftCardMobile(el) {
-      let html = `<div class="gift-card-container desktophide tabhide">
+    el.insertAdjacentHTML("beforeend", html);
+  }
+
+  renderGiftCardMobile(el) {
+    let html = `<div class="gift-card-container desktophide tabhide">
                         <div class="gc-logo">
                             <img src="images/loyaltyhub/gitcard/gift-card.svg" alt="Gift Card">
                         </div>
@@ -267,11 +269,11 @@ class LoyaltyHub {
                             Learn more
                         </a>
                     </div>`;
-      el.insertAdjacentHTML("beforeend", html);
-    }
-  
-    renderInviteFriends(el) {
-      let html = `<div class="invite-friends-wrapper desktophide tabhide">
+    el.insertAdjacentHTML("beforeend", html);
+  }
+
+  renderInviteFriends(el) {
+    let html = `<div class="invite-friends-wrapper desktophide tabhide">
                         <div class="invite-details">
                             <h2 class="id-head">Refer &amp; Get 
                                 <i class="bg-icon bg-icon20 bg-coin icon-rightspace icon-leftspace"></i> 500 points
@@ -287,11 +289,11 @@ class LoyaltyHub {
                             </div>
                         </div>
                     </div>`;
-      el.insertAdjacentHTML("beforeend", html);
-    }
-  
-    renderUploadBillMobile(el) {
-      let html = `<div class="uploadbill-main desktophide tabhide">
+    el.insertAdjacentHTML("beforeend", html);
+  }
+
+  renderUploadBillMobile(el) {
+    let html = `<div class="uploadbill-main desktophide tabhide">
                         <div class="ubm-logo">
                             <img src="https://web-assets.phoenixnhance.com/assets/images/gold-theme/loyalty-hub/upload-bill.png"
                                 alt="Upload Bill"></div>
@@ -305,30 +307,41 @@ class LoyaltyHub {
                             </a>
                         </div>
                     </div>`;
-      el.insertAdjacentHTML("beforeend", html);
-    }
-
+    el.insertAdjacentHTML("beforeend", html);
   }
 
-  function loyaltyHubEventHandlers(loyaltyHubObj) {
-    setTimeout(() => {
-      document.getElementById("pointbox-wrapper").addEventListener(
-        "click",
-        function () {
-          loyaltyHubObj.clickMe("asdsdfasdf");
-        },
-        true
-      );
-    });
+  renderSpinTheWheelListing() {
+    let el = document.getElementById("landing-page-main");
+    el.parentNode.removeChild(el);
+    loyaltyHub("n-container");
   }
+}
 
-  function loyaltyHubRenderer(id) {
-    let loyaltyHubObj = new LoyaltyHub(id);
-    loyaltyHubObj.renderer();
-  
-    setTimeout(() => {
-      loyaltyHubEventHandlers(loyaltyHubObj);
-    });
-  }
+function loyaltyHubEventHandlers(loyaltyHubObj) {
+  setTimeout(() => {
+    document.getElementById("pointbox-wrapper").addEventListener(
+      "click",
+      function () {
+        loyaltyHubObj.clickMe("asdsdfasdf");
+      },
+      true
+    );
 
-  module.exports = loyaltyHubRenderer;
+    document
+      .getElementById("spin-the-wheel-btn")
+      .addEventListener("click", function () {
+        loyaltyHubObj.renderSpinTheWheelListing();
+      });
+  });
+}
+
+function loyaltyHubRenderer(id) {
+  let loyaltyHubObj = new LoyaltyHub(id);
+  loyaltyHubObj.renderer();
+
+  setTimeout(() => {
+    loyaltyHubEventHandlers(loyaltyHubObj);
+  });
+}
+
+module.exports = loyaltyHubRenderer;
