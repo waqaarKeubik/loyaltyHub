@@ -46,6 +46,33 @@ class Httpclient {
       console.log(error);
     }
   }
+  async getToken(number) {
+    try {
+      let {
+        data: { data },
+      } = await axios.post(
+        `https://asgard-web-apis-stage.frt.one/v1/fct/getToken`,
+        {
+          mobileNumber: number,
+        }
+      );
+      return data;
+    } catch (error) {
+      console.log(error);
+    }
+  }
+  async getConstants() {
+    try {
+      let {
+        data: { data },
+      } = await axios.get(
+        `https://asgard-web-apis-stage.frt.one/v1/constants/getMallConstants`
+      );
+      return data;
+    } catch (error) {
+      console.log(error);
+    }
+  }
 }
 
 let http = new Httpclient();
