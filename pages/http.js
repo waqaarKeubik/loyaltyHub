@@ -73,6 +73,19 @@ class Httpclient {
       console.log(error);
     }
   }
+  async getUserProfile(token) {
+    try {
+      let {
+        data: { data },
+      } = await axios.get(
+        `https://asgard-web-apis-stage.frt.one/v1/web/userProfile`,
+        { headers: { Authorization: `${token}`, mallId: "mall_1" } }
+      );
+      return data;
+    } catch (error) {
+      console.log(error);
+    }
+  }
 }
 
 let http = new Httpclient();
