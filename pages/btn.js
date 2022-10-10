@@ -29,12 +29,19 @@ class RewardBtn {
     mod.setAttribute("id", "reward-modal");
     mod.appendChild(card());
 
-    spinWheelListingRenderer("reward-modal");
+    const exploreSpin = document.querySelector(".explore");
+
+    exploreSpin.addEventListener("click", () => {
+      const gameArena = document.querySelector(".game-arena");
+      gameArena.style.display = "none";
+      spinWheelListingRenderer("reward-modal");
+    });
 
     btn.addEventListener("click", () => {
       console.log("btn clicked");
       toggleModal(mod);
-
+      const gameArena = document.querySelector(".game-arena");
+      gameArena.style.display = "block";
       const wheel = document.querySelector(".spin-wheel-listing-main");
       console.log(wheel);
     });
@@ -43,8 +50,6 @@ class RewardBtn {
 
 const toggleModal = (state) => {
   const modal = state;
-
-  const wheel = document.querySelector(".common-section");
 
   if (modal.classList.contains("hide")) {
     modal.classList.remove("hide");
@@ -60,11 +65,14 @@ const toggleModal = (state) => {
     modal.classList.remove("transition");
     const wrapper = document.querySelector(".wheel-wrapper");
     const spinBtn = document.querySelector("#spin-now");
+    const reward = document.querySelector("#reward-modal");
+    const child = document.querySelector("#spin-wheel-listing-main");
 
-    spinWheelListingRenderer("reward-modal");
+    // spinWheelListingRenderer("reward-modal");
 
     modal.removeChild(wrapper);
     modal.removeChild(spinBtn);
+    reward.removeChild(child);
   });
 };
 

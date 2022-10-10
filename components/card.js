@@ -1,5 +1,7 @@
 const card = (second) => {
   const html = ` <div class="game-arena">
+  <h4>Game Arena</h4>
+  <p>play games to win points, coupons & rewards</p>
     <div class="card">
       <div class="inner">
         <h6>Wheel of fortune</h6>
