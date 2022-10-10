@@ -16,6 +16,8 @@
 /* CastleT Regular */
 @font-face {font-family: 'CastleT';src: url('https://d1xz17h748l1av.cloudfront.net/static/fonts/CastleT.eot');src: url('https://d1xz17h748l1av.cloudfront.net/static/fonts/CastleT.eot?#iefix') format('embedded-opentype'),url('https://d1xz17h748l1av.cloudfront.net/static/fonts/CastleT.woff') format('woff'),url('https://d1xz17h748l1av.cloudfront.net/static/fonts/CastleT.ttf') format('truetype'),url('https://d1xz17h748l1av.cloudfront.net/static/fonts/CastleT.svg#wf') format('svg');}
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
 *{
     margin: 0;
     padding: 0;

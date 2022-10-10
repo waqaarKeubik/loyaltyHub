@@ -313,7 +313,7 @@ class LoyaltyHub {
   renderSpinTheWheelListing() {
     let el = document.getElementById("landing-page-main");
     el.parentNode.removeChild(el);
-    loyaltyHub("n-container");
+    loyaltyHub("reward-btn-section");
   }
 }
 

@@ -1,23 +1,17 @@
 const http = require("./http");
 const loyaltyHub = require("./spin-the-wheel");
-const { rewardBtn } = require("./btn");
 
 class SpinWheelListing {
   constructor() {}
   init(id) {
     let parentContainer = document.getElementById(id);
 
+    console.log("parent", parentContainer);
+
     let containerEl = document.createElement("section");
     containerEl.setAttribute("class", "common-section wheel-list-page-wrapper");
     containerEl.setAttribute("id", "spin-wheel-listing-main");
     let html = `<div class="container-fluid">
-                    <div class="row">
-                        <div class="col-12">
-                            <h1 class="heading3-text arrow-btn-container">
-                            <a class="previous-arrow-btn"></a>Spin the wheel
-                            </h1>
-                        </div>
-                    </div>
                     <div class="row">
                         <div class="col-12">
                             <p class="wheels-listing-heading">
@@ -31,7 +25,7 @@ class SpinWheelListing {
                 </div>`;
     containerEl.innerHTML = html;
     parentContainer.appendChild(containerEl);
-
+    console.log(parentContainer, "sda");
     setTimeout(() => {
       this.renderListing();
     });
@@ -51,7 +45,7 @@ class SpinWheelListing {
     for (let wheel of wheels) {
       let mesg = this.getWinningMessage(wheel.benefitsData);
       let elId = `wheel-block-${wheel.id}`;
-      let html = `<div class="col-12 col-md-6" class="wheel-block" id=${elId}>
+      let html = `<div class="col-12 col-md-12" class="wheel-block" id=${elId}>
                     <a id="spin-wheel-block" class="wheel-list-wrapper">
                         <div class="wheel-detail">
                             <div class="wd-top">
@@ -141,7 +135,7 @@ class SpinWheelListing {
   renderSpinTheWheelDetails(wheelId) {
     let el = document.getElementById("spin-wheel-listing-main");
     el.parentNode.removeChild(el);
-    loyaltyHub("n-container", {
+    loyaltyHub("reward-modal", {
       wheelId: wheelId,
     });
   }

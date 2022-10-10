@@ -6,7 +6,7 @@ class Httpclient {
       baseURL: "https://asgard-web-apis-stage.frt.one",
       headers: {
         Authorization:
-          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjNjRkVXVGdFbDVqZ1FNYkp3c0tDX2ckJCIsImZpcnN0TmFtZSI6IldhcWFhciIsImxhc3ROYW1lIjoiQXNsYW0iLCJlbWFpbCI6IndhcWFhcjFAdW5pZnluZC5jb20iLCJtb2JpbGVOdW1iZXIiOjg4NzkzNDc2NDYsImRldmljZSI6IjUiLCJkZXZpY2VJZCI6InF3ZXJ0eTEyMzY2NTIiLCJwcmVmZXJyZWRNYWxsSWQiOjEsImlzRXhjbHVzaXZlIjowLCJnZW5kZXIiOiJtYWxlIiwiZG9iIjoiMjAwOS0wMi0xMSIsImFubml2ZXJzYXJ5IjoiMjAyMC0wOC0xMiIsIm9wdGVkRm9yRGVsZXRpb24iOjAsInJlYWN0aXZhdGlvbkNvZGUiOm51bGwsInByb2ZpbGVQaWMiOiJodHRwczovL3B1YmxpYy1mdXR1cmVyZXRhaWwtZGF0YS5zMy5hbWF6b25hd3MuY29tL3Byb2ZpbGVQaWMvODk4MDMwMDY1MzktMS0yMDIwLTgtMjYucG5nIiwibGFzdExvZ2luIjoiMjctMDYtMjAyMiIsImRlbGV0aW9uUmVxdWVzdGVkQXQiOm51bGwsImlhdCI6MTY1NjQwNzIwMSwiZXhwIjoxNjU3NzAzMjAxfQ.30NEV04IBnhBcXeH7maU_wUElfcDPPXxz8edJYQ2Z9U",
+          "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImFROVVMSktJNmJDNXJ5NUVkZ1Q5ckEkJCIsImZpcnN0TmFtZSI6IlNrIiwibGFzdE5hbWUiOiJLYXVzaGlrIiwiZW1haWwiOm51bGwsIm1vYmlsZU51bWJlciI6NzAyNzIxODgwMSwiZGV2aWNlIjoiNSIsImRldmljZUlkIjoicXdlcnR5MTIzNjY1MiIsInByZWZlcnJlZE1hbGxJZCI6MiwiaXNFeGNsdXNpdmUiOjAsImdlbmRlciI6bnVsbCwiZG9iIjpudWxsLCJhbm5pdmVyc2FyeSI6bnVsbCwib3B0ZWRGb3JEZWxldGlvbiI6MCwicmVhY3RpdmF0aW9uQ29kZSI6bnVsbCwicHJvZmlsZVBpYyI6Imh0dHBzOi8vcHVibGljLWZ1dHVyZXJldGFpbC1kYXRhLnMzLmFtYXpvbmF3cy5jb20vcHJvZmlsZVBpYy84OTgwMzAwNjUzOS0xLTIwMjAtOC0yNi5wbmciLCJsYXN0TG9naW4iOiIwNi0xMC0yMDIyIiwiZGVsZXRpb25SZXF1ZXN0ZWRBdCI6bnVsbCwiaWF0IjoxNjY1MTIzMzIwLCJleHAiOjE2NjY0MTkzMjB9.KZkaP9ugft9QczofZRDiNV7ZuiTO4ZH1hczJRd18oHM",
         mallId: "mall_1",
       },
     });
@@ -38,7 +38,9 @@ class Httpclient {
 
   async spinNow(payload) {
     try {
-      let {data: {data}} = await this.axios.post(`/v1/web/spinWheel`, payload);
+      let {
+        data: { data },
+      } = await this.axios.post(`/v1/web/spinWheel`, payload);
       return data;
     } catch (error) {
       console.log(error);

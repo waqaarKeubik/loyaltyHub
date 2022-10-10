@@ -1,0 +1,65 @@
+.card {
+    width: 152px;
+    height: 230px;
+    position: relative;
+    background: #f7f8fa;
+    border-radius: 12px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: "Poppins";
+  }
+
+  .card::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: -30px;
+    transform: translate(-50%, 0px);
+    background: url("../images/scratch.svg");
+    background-size: cover;
+    width: 70px;
+    height: 70px;
+  }
+  .points-wallet {
+    width: 79px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Background Colour/BG White */
+    color: #eb4c60;
+    background: #ffffff;
+    border-radius: 20px;
+    margin: 10px auto;
+  }
+  .inner {
+    padding-top: 40px;
+  }
+  .game-arena h6 {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #eb4c60;
+    margin: 12px 0;
+  }
+
+  .game-arena span {
+    font-size: 12px;
+  }
+
+  .game-arena .explore {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    width: 120px;
+    height: 44px;
+    background: #eb4c60;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    margin-top: 20px;
+  }

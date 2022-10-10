@@ -1,10 +1,14 @@
 .wheel-wrapper {
   margin-top: 100px;
-  max-width: 452px;
-  height: 452px;
-  position: relative;
+  width: 300px;
+  height: 300px;
   z-index: 1;
   margin-bottom: 60px;
+  overflow: hidden;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
   /* background-color: red; */
 }
 
@@ -132,6 +136,7 @@
 .final-result-wrapper {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: #371f0b;
   position: absolute;
   width: 90% !important;
@@ -145,15 +150,17 @@
 }
 
 .final-status {
-  flex-direction: column;
+  align-items: center;
   justify-content: center;
   text-align: center;
   padding: 20px 30px;
+  margin-top: 40px;
 }
 
 .final-status .icon {
   width: 100px;
   height: 100px;
+  margin: 0 auto;
 }
 
 .wheel-bulb:nth-of-type(1) {
@@ -284,8 +291,9 @@
   color: #693c14;
   margin-bottom: 12px;
   max-width: 296px;
-  font-size: 3.2rem;
+  font-size: 2rem;
   line-height: 39px;
+  text-align: left;
 }
 .wheel-list-page-wrapper .wheel-list-wrapper .wd-top img {
   position: absolute;
@@ -355,4 +363,19 @@
 .wd-bottom-text span{
   display: flex;
   align-items: center;
+}
+
+
+#spin-now{
+  position: relative;
+  z-index: 9999;
+}
+
+.common-section{
+  overflow: hidden;
+  z-index: 99999;
+}
+
+.wheel-wrapper{
+  z-index: 9999999 !important;
 }
