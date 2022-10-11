@@ -1,4 +1,9 @@
 const modal = () => {
+  const points = localStorage.getItem("config");
+  console.log(points);
+  if (points) {
+    console.log(points, "points");
+  }
   const html = `
   <header>
     <div>
@@ -11,7 +16,6 @@ const modal = () => {
     <div class="points-banner">
       <div class="points-banner-inner">
         <p>My Reward Points</p>
-        <span>Blue Tier</span>
       </div>
 
       <div class="points-wallet"><span></span> 100</div>

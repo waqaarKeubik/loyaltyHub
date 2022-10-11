@@ -19,6 +19,7 @@ class SpinWheelListing {
                         </div>
                     </div>
                     <div class="row">
+                   
                         <div class="col-12">
                             <p class="wheels-listing-heading">
                             Play and win a chance to earn some points, gems, coupons &amp; rewards

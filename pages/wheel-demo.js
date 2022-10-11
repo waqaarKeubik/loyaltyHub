@@ -13,6 +13,9 @@ class SpinWheelListing {
     containerEl.setAttribute("id", "spin-wheel-listing-main");
     let html = `<div class="container-fluid">
                     <div class="row">
+                    <div class="col-12 text-left" id="wheel-list-back">
+                    < back
+</div>
                         <div class="col-12">
                             <p class="wheels-listing-heading">
                             Play and win a chance to earn some points, gems, coupons &amp; rewards
@@ -26,6 +29,12 @@ class SpinWheelListing {
     containerEl.innerHTML = html;
     parentContainer.appendChild(containerEl);
     console.log(parentContainer, "sda");
+
+    document.querySelector("#wheel-list-back").addEventListener("click", () => {
+      parentContainer.removeChild(containerEl);
+      document.querySelector(".points-banner").style.display = "flex";
+      document.querySelector(".game-arena").style.display = "block";
+    });
     setTimeout(() => {
       this.renderListing();
     });

@@ -13,6 +13,7 @@ const card = (second) => {
   </div>`;
 
   const divNode = document.createElement("div");
+  divNode.setAttribute("id", "card-container");
   divNode.innerHTML = html;
 
   return divNode;
