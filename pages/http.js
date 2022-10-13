@@ -6,7 +6,7 @@ class Httpclient {
       baseURL: "https://asgard-web-apis-stage.frt.one",
       headers: {
         Authorization: `Bearer ${localStorage.getItem("token")}`,
-        mallId: "mall_1",
+        mallId: "mall_2",
       },
     });
   }
@@ -16,7 +16,13 @@ class Httpclient {
       let {
         data: { data },
       } = await this.axios.get(
-        "/v1/web/spinWheel?pageNo=1&pageSize=10&sort=desc"
+        "/v1/web/spinWheel?pageNo=1&pageSize=10&sort=desc",
+        {
+          headers: {
+            Authorization: `Bearer ${localStorage.getItem("token")}`,
+            mallId: "mall_2",
+          },
+        }
       );
       return data;
     } catch (error) {
@@ -24,11 +30,16 @@ class Httpclient {
     }
   }
 
-  async getSpinTheWheelDetails(id) {
+  async getSpinTheWheelDetails(id, token) {
     try {
       let {
         data: { data },
-      } = await this.axios.get(`/v1/web/spinWheel/${id}`);
+      } = await this.axios.get(`/v1/web/spinWheel/${id}`, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+          mallId: "mall_2",
+        },
+      });
       return data;
     } catch (error) {
       console.log(error);
@@ -39,7 +50,12 @@ class Httpclient {
     try {
       let {
         data: { data },
-      } = await this.axios.post(`/v1/web/spinWheel`, payload);
+      } = await this.axios.post(`/v1/web/spinWheel`, payload, {
+        headers: {
+          Authorization: `Bearer ${localStorage.getItem("token")}`,
+          mallId: "mall_2",
+        },
+      });
       return data;
     } catch (error) {
       console.log(error);
@@ -78,7 +94,7 @@ class Httpclient {
         data: { data },
       } = await axios.get(
         `https://asgard-web-apis-stage.frt.one/v1/web/userProfile`,
-        { headers: { Authorization: `${token}`, mallId: "mall_1" } }
+        { headers: { Authorization: `${token}`, mallId: "mall_2" } }
       );
       return data;
     } catch (error) {

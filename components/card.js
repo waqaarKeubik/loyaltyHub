@@ -4,10 +4,10 @@ const card = (second) => {
   <p>play games to win points, coupons & rewards</p>
     <div class="card">
       <div class="inner">
-        <h6>Wheel of fortune</h6>
+        <h6 class="text-primary">Wheel of fortune</h6>
         <span>starts at</span>
-        <div class="points-wallet">100</div>
-        <button class="explore">Explore</button>
+        <div class="points-wallet text-primary">100</div>
+        <button class="explore theme-primary">Explore</button>
       </div>
     </div>
   </div>`;

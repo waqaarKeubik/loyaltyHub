@@ -95,13 +95,37 @@
 
 .close {
   cursor: pointer;
+
+  font-size: 24px;
 }
 
 .wallet .wallet-back {
   text-align: left;
   margin-left: 20px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #e3e3e3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .text-left {
   text-align: left;
+}
+
+#wheel-list-back {
+  cursor: pointer;
+  text-align: left;
+  margin-left: 20px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #e3e3e3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

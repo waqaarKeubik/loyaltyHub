@@ -14,7 +14,7 @@ class SpinWheelListing {
     let html = `<div class="container-fluid">
                     <div class="row">
                     <div class="col-12 text-left" id="wheel-list-back">
-                    < back
+                    < 
 </div>
                         <div class="col-12">
                             <p class="wheels-listing-heading">

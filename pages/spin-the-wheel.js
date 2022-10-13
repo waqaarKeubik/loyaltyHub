@@ -29,7 +29,10 @@ class SpinWheel {
 
   async spinWheelDetails(id) {
     try {
-      let result = await http.getSpinTheWheelDetails(id);
+      let result = await http.getSpinTheWheelDetails(
+        id,
+        localStorage.getItem("token")
+      );
       return result;
     } catch (error) {
       console.log(error);
@@ -160,8 +163,36 @@ class SpinWheel {
   renderActions(el) {
     let buttonEl = document.createElement("button");
     buttonEl.setAttribute("id", "spin-now");
+    buttonEl.setAttribute("class", "theme-primary");
+
     buttonEl.innerText = "Spin now";
     el.appendChild(buttonEl);
+
+    let back = document.createElement("span");
+    back.innerHTML = `  <div class="wheel-back"> < </div>`;
+    el.appendChild(back);
+
+    back.addEventListener("click", () => {
+      const wrap = document.querySelector(".wheel-wrapper");
+      const spin = document.querySelector("#spin-now");
+      const points = document.querySelector(".points-banner");
+      const game = document.querySelector(".game-arena");
+      const whlBck = document.querySelector(".wheel-back");
+
+      points.style.display = "flex";
+      game.style.display = "block";
+      http.getUserProfile(localStorage.getItem("token")).then((res) => {
+        document.querySelector(
+          ".points-wallet"
+        ).innerHTML = `${convertToInternationalCurrencySystem(
+          res.userData.totalPoints
+        )}`;
+      });
+
+      wrap.remove();
+      spin.remove();
+      whlBck.parentNode.remove();
+    });
 
     buttonEl.addEventListener("click", (e) => {
       this.spinNow(buttonEl);
@@ -199,25 +230,25 @@ class SpinWheel {
   removeWheelAndShowPrize(prize) {
     let el1 = document.getElementById("wheel-inner-circle");
     let el2 = document.getElementById("prize-list");
-    let el3 = document.getElementById("final-result-wrapper")
+    let el3 = document.getElementById("final-result-wrapper");
     el1.style.display = "none";
     el2.style.display = "none";
     el3.style.display = "block";
 
-    this.showPrize(prize)
+    this.showPrize(prize);
   }
 
-  showPrize (prize) {
-    let el = document.getElementById('final-status');
+  showPrize(prize) {
+    let el = document.getElementById("final-status");
 
-    let htmlString = '';
+    let htmlString = "";
     if (prize.benefitType === 1) {
       htmlString += `<div class='icon'><img src=${prize.benefit.logo} /></div>`;
       htmlString += `<div class='value'>You won a Reward from ${prize.benefit.retailerName}</div>`;
     } else if (prize.benefitType === 2) {
       htmlString += `<div class='icon'><img src=${prize.benefit.logo} /></div>`;
       htmlString += `<div class='value'>You won a Reward from ${prize.benefit.retailerName}</div>`;
-    }  else if (prize.benefitType === 3) {
+    } else if (prize.benefitType === 3) {
       htmlString += `<div class='icon'><img src="https://static.vecteezy.com/system/resources/previews/006/871/898/non_2x/cardano-crypto-flat-icon-free-vector.jpg" /></div>`;
       htmlString += `<div class='value'>${prize.amount}</div>`;
     } else if (prize.benefitType === 4) {
@@ -229,9 +260,9 @@ class SpinWheel {
     }
     // console.log(htmlString)
     el.innerHTML = htmlString;
-    console.log(el)
-    console.log(htmlString)
-    el.appendChild(htmlString)
+    console.log(el);
+    console.log(htmlString);
+    el.appendChild(htmlString);
   }
 
   getRandomArbitrary(min, max) {
@@ -269,3 +300,16 @@ function spinWheelRenderer(id, obj) {
 }
 
 module.exports = spinWheelRenderer;
+
+function convertToInternationalCurrencySystem(labelValue) {
+  // Nine Zeroes for Billions
+  return Math.abs(Number(labelValue)) >= 1.0e9
+    ? (Math.abs(Number(labelValue)) / 1.0e9).toFixed(2) + "B"
+    : // Six Zeroes for Millions
+    Math.abs(Number(labelValue)) >= 1.0e6
+    ? (Math.abs(Number(labelValue)) / 1.0e6).toFixed(2) + "M"
+    : // Three Zeroes for Thousands
+    Math.abs(Number(labelValue)) >= 1.0e3
+    ? (Math.abs(Number(labelValue)) / 1.0e3).toFixed(2) + "K"
+    : Math.abs(Number(labelValue));
+}

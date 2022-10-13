@@ -370,6 +370,17 @@
 #spin-now {
   position: relative;
   z-index: 9999;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -30%);
+  /* background: #0000ff; */
+  /* border: none; */
+  /* color: white; */
+  /* padding: 10px 15px; */
+  /* outline: none; */
+  /* border-radius: 12px; */
+  cursor: pointer;
 }
 
 .common-section {
@@ -379,4 +390,20 @@
 
 .wheel-wrapper {
   z-index: 9999999 !important;
+}
+
+.wheel-back {
+  text-align: left;
+  margin-left: 20px;
+  cursor: pointer;
+  text-align: left;
+  margin-left: 20px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #e3e3e3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

@@ -6,7 +6,7 @@ const spinWheelListingRenderer = require("./wheel-demo");
 const http = require("./http");
 
 const rewardBtn = () => {
-  const btn = `<div id="rewrdBtn"> <span></span>  Rewards</div>`;
+  const btn = `<div class="theme-primary" id="rewrdBtn"> <span></span>  Rewards</div>`;
   return btn;
 };
 
@@ -17,6 +17,8 @@ class RewardBtn {
     console.log(config, "from sdk");
 
     localStorage.setItem("config", JSON.stringify(config.data));
+    localStorage.setItem("color", JSON.stringify(config.primaryColor));
+
     let parentContainer = document.getElementById(id);
     let containerEl = document.createElement("section");
     containerEl.setAttribute("id", "reward-btn-section");
@@ -52,7 +54,6 @@ class RewardBtn {
       const backWallet = document.querySelector(".wallet-back");
 
       backWallet?.addEventListener("click", () => {
-        console.log("vakcj");
         document.querySelector(".wallet").style.display = "none";
         banner.style.display = "flex";
 
@@ -80,7 +81,7 @@ class RewardBtn {
         }
         document.querySelector(
           ".points-wallet"
-        ).innerHTML = `<span></span> ${convertToInternationalCurrencySystem(
+        ).innerHTML = `${convertToInternationalCurrencySystem(
           res.userData.totalPoints
         )}`;
         const gameArena = document.querySelector(".game-arena");
@@ -89,6 +90,7 @@ class RewardBtn {
         console.log(wheel);
       });
     });
+    changeTheme(config.primaryColor);
   }
 }
 
@@ -156,3 +158,15 @@ function initialize(id, config) {
 }
 
 module.exports = initialize;
+
+const changeTheme = (color) => {
+  console.log("change theme");
+  document.querySelectorAll(".theme-primary").forEach((item) => {
+    console.log("item", item);
+    item.style.setProperty("background-color", color, "important");
+  });
+
+  document.querySelectorAll(".text-primary").forEach((item) => {
+    item.style.setProperty("color", color, "important");
+  });
+};

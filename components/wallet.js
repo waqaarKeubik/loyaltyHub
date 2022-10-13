@@ -5,7 +5,7 @@ const wallet = (second) => {
     : null;
 
   const html = ` <div class="wallet">
-  <div class="wallet-back"> < back</div>
+  <div class="wallet-back"> <</div>
     <h2>Wallet</h2>
     <h4>Total Points ${points.totalPoints}  </h4>
     </div>`;
